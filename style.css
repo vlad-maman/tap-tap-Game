@@ -1,0 +1,342 @@
+body{
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.upg-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: none;
+  cursor: pointer;
+  width: 180px;
+  height: 70px;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  background: url(img/button/8b31480480a2f7b7ae0161155337938a.jpg);
+  background-size:50px ;
+  border-radius: 30px;
+  border: 1px solid #8F9092;
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(156, 143, 143);
+  text-shadow: 0 1px #fff;
+
+  z-index: 2;
+}
+
+.upg-btn:hover {
+  box-shadow: 0 4px 3px 1px #4a4949, 0 6px 8px #4f5051, 0 -4px 4px #444648, 0 -6px 4px #383535, inset 0 0 3px 3px #26282c;
+}
+
+.upg-btn:active {
+  box-shadow: 0 4px 3px 1px #443f3f, 0 6px 8px #434344, 0 -4px 4px #3b3d42, 0 -6px 4px #322828, inset 0 0 5px 3px #6e6a6a, inset 0 0 30px #464141;
+}
+
+.upg-btn:focus {
+  box-shadow: 0 4px 3px 1px #382d2d, 0 6px 8px #363637, 0 -4px 4px #313234, 0 -6px 4px #454040, inset 0 0 5px 3px #201f1f, inset 0 0 30rgb(45, 45, 45)aaa;
+}
+
+
+.decoration-image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 100%;
+  background: black;
+}
+
+.first-garage{
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: url(img/garage/1524419450114219188.jpg);
+  background-size:cover;
+}
+
+.second-garage{
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: url(img/garage/1646920464_1-amiel-club-p-krasivii-garazh-vnutri-interer-krasivo-fot-1.jpg);
+  background-size:cover;
+  
+}
+
+.game{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.first-upgrade{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background:url(img/garage/1524419450114219188.jpg) ;
+  background-size: 1500px 900px;
+  width: 100%;
+  height: 100%;
+}
+
+.first-car{
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+  background:url(img/car/0bb786abd111853a98ddc843a0092619.png) ;
+  background-size: cover;
+  width: 600px;
+  height: 750px;
+  filter: drop-shadow(100px 100px 100px black);
+  cursor: pointer;
+  
+}
+
+.next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3%;
+  width: 89px;
+  height: 65px;
+  background: url(img/ykazatel.png);
+  background-size:cover ;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.next:hover{
+  width: 78px;
+  height: 58px;
+}
+
+.next:active{
+  width: 82px;
+  height: 60px;
+}
+
+
+.sec-upgrade{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background:url(img/garage/1634320508_14-p-kak-oblagorodit-garazh-vnutri-foto-19.jpg) ;
+  background-size:1600px 900px;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+.nnext{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3%;
+  width: 89px;
+  height: 65px;
+  background: url(img/ykazatel.png);
+  background-size:cover ;
+  cursor: pointer;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+.nnext:hover{
+  width: 78px;
+  height: 58px;
+}
+
+.nnext:active{
+  width: 82px;
+  height: 60px;
+}
+
+.second-car{
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background:url(img/car/png-transparent-seat-128-antique-car-vintage-car-cropped-image-transparent-background.png) ;
+  background-size: 700px;
+  width: 700px;
+  height: 750px;
+  filter: drop-shadow(100px 100px 100px black);
+  cursor: pointer;
+}
+
+.second-car:hover{
+  width: 696px; 
+  height: 746px; 
+}
+
+.second-car:active{
+  width: 700px; 
+  height: 750px; 
+}
+
+.first-car:hover{
+  width: 594px; 
+  height: 742px; 
+}
+
+.first-car:active{
+  width: 600px; 
+  height: 750px; 
+}
+
+.click-me{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: rgb(255, 255, 255);
+  background: black;
+  width: 280px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 40px;
+  z-index: 2;
+}
+
+.coin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gold;
+  z-index: 2;
+  font-size: 40px;
+ 
+}
+
+.photo_toreach{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+}
+
+
+.container {
+  width: 100vw; height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.input-field,
+.input_field:hover,
+.input_field:active,
+.input_field:focus {
+  border: 1.5px solid gray;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input_field {
+  padding: .3em;
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Montserrat', sans-serif; 
+  box-sizing: border-box;
+}
+
+button {
+  padding: .3em;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif; 
+  margin-left: .5em;
+}
+
+h1 {
+  display: none;
+}
+
+
+
+.but {
+  font-size: 17px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: rgb(101, 156, 211);
+  color: white;
+  border-radius: 4px;
+  width: 160px;
+  height: 70px;
+  margin: 50px;
+  cursor: pointer;
+ }
+ 
+ .but:hover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgb(77, 86, 94) 0%, rgb(123, 134, 136)0%);
+ }
+ 
+ .but:active {
+  transform: translate(0em, 0.2em);
+ }
+
+ .con-btn{
+ position: absolute;
+ left: 50%;
+ bottom: -4%;
+ transform: translateX(-50%);
+ width: max-content;
+  z-index: 2;
+ }
+
+ .garage{
+  position: absolute;
+  top: 32%;
+  right: 1%;
+  margin: 0;
+ }
+
+ .coin-con{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 220px;
+  background-color: #201f1f;
+  z-index: 2;
+  height: 70px;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  border-radius: 20px;
+  overflow: hidden;
+  
+  
+ }
