@@ -28,17 +28,387 @@ coin_valut.innerHTML = coin
 document.querySelector('.coin').innerHTML =  document.querySelector('.coin').innerHTML
 
 
-let coin = 0
+let coin = 1000000
 
 
 
 second_car.addEventListener('click', function(){
     coin++
     coin++
+    coin++
+    coin++
+    coin++
+
 
     coin_valut.innerHTML = coin
   
     })
+
+    let newmechanic = document.querySelector('.mechanic')
+
+
+    ///////////
+    let newmechanicSecond = document.querySelector('.mechanicc')
+
+   let buySeconddd = 'buy'
+
+    newmechanicSecond.addEventListener('click', function(){
+     
+    
+if(buySeconddd === 'buy'){
+    if(daleSecond === 'daleee'){
+           
+        if(dozvilSecond === 'dozvilll'){
+      
+            if(coin_valut.innerHTML >= 200000){
+              coin = coin - 200000
+              coin_valut.innerHTML = coin
+
+              newmechanicSecond.innerHTML = 'You bought it'
+              newmechanicSecond.style.background = 'url(img/button/3434.970.jpg)'
+              newmechanicSecond.style.backgroundSize = 'cover'
+
+             
+             
+              setInterval(dozSecond, 50)
+              
+   buySeconddd = 'lol'
+          
+              
+          }else{
+            
+             coin_valut.style.color = 'red'
+      coin_valut.style.scale = '1.2'
+      setTimeout(function(){
+          coin_valut.style.color = 'gold'
+          coin_valut.style.scale = '1'
+      },500)
+      setTimeout(function(){
+          coin_valut.style.color = 'red'
+          coin_valut.style.scale = '1.2'
+      },1000)
+      setTimeout(function(){
+          coin_valut.style.color = 'gold'
+          coin_valut.style.scale = '1'
+      },1500)
+      
+    }
+        }
+         
+      
+
+
+     }
+ 
+}
+}
+            
+
+ 
+    
+   
+  )
+    //////////
+
+
+
+    let buyyyyyyyyyy = 'buyyyyyyyyyy'
+
+    newmechanic.addEventListener('click', function(){
+     
+    
+        if(buyyyyyyyyyy === 'buyyyyyyyyyy'){
+            if(dale === 'dalee'){
+           
+              if(dozvill === 'dozvilll'){
+            
+                  if(coin_valut.innerHTML >= 50000){
+                    coin = coin - 50000
+                    coin_valut.innerHTML = coin
+     
+                    newmechanic.innerHTML = 'You bought it'
+                    newmechanic.style.background = 'url(img/button/3434.970.jpg)'
+                    newmechanic.style.backgroundSize = 'cover'
+     
+                   
+                    setInterval(doz, 1000)
+                    buyyyyyyyyyy = 'lol'
+                    
+                }else{
+                  
+                   coin_valut.style.color = 'red'
+            coin_valut.style.scale = '1.2'
+            setTimeout(function(){
+                coin_valut.style.color = 'gold'
+                coin_valut.style.scale = '1'
+            },500)
+            setTimeout(function(){
+                coin_valut.style.color = 'red'
+                coin_valut.style.scale = '1.2'
+            },1000)
+            setTimeout(function(){
+                coin_valut.style.color = 'gold'
+                coin_valut.style.scale = '1'
+            },1500)
+            
+          }
+              }
+               
+            }
+
+
+           }
+       
+      }
+
+      
+
+ 
+///////////////////////////////
+   
+  )
+
+
+    let buyyyyyyyyy = 'buyyyyyyyyy'
+
+    newmechanic.addEventListener('click', function(){
+     
+    
+        if(buyyyyyyyyy === 'buyyyyyyyyy'){
+            if(dale === 'dale'){
+              if(dozvill === 'dozvill'){
+            
+                  if(coin_valut.innerHTML >= 40000){
+                    coin = coin - 40000
+                    coin_valut.innerHTML = coin
+     
+                    newmechanic.innerHTML = 'Update mechanic 50000$ lv4'
+                   
+                    setInterval(doz, 500)
+                    setInterval(doz, 500)
+                   
+                    dozvill = 'dozvilll'
+                    dale = 'dalee'
+                    buyyyyyyyyy = 'lol'
+                   
+                    
+                }else{
+                  
+                   coin_valut.style.color = 'red'
+            coin_valut.style.scale = '1.2'
+            setTimeout(function(){
+                coin_valut.style.color = 'gold'
+                coin_valut.style.scale = '1'
+            },500)
+            setTimeout(function(){
+                coin_valut.style.color = 'red'
+                coin_valut.style.scale = '1.2'
+            },1000)
+            setTimeout(function(){
+                coin_valut.style.color = 'gold'
+                coin_valut.style.scale = '1'
+            },1500)
+            
+          }
+              }
+               
+            }
+
+
+           }
+       
+      }
+
+ 
+
+   
+  )
+
+  //////////
+  
+  let buySecondddd = 'buy'
+
+  newmechanicSecond.addEventListener('click', function(){
+   
+  if(buySecondddd === 'buy'){
+    if(daleSecond === 'dalee'){
+        if(dozvilSecond === 'dozvill'){
+      
+            if(coin_valut.innerHTML >= 150000){
+              coin = coin - 150000
+              coin_valut.innerHTML = coin
+
+              newmechanicSecond.innerHTML = 'Update mechanic 20000$ lv4'
+             
+              setInterval(dozSecond, 500)
+              setInterval(dozSecond, 500)
+              setInterval(dozSecond, 500)
+              setInterval(dozSecond, 500)
+             
+              dozvilSecond = 'dozvilll'
+              daleSecond = 'daleee'
+          
+             
+              
+          }else{
+            
+             coin_valut.style.color = 'red'
+      coin_valut.style.scale = '1.2'
+      setTimeout(function(){
+          coin_valut.style.color = 'gold'
+          coin_valut.style.scale = '1'
+      },500)
+      setTimeout(function(){
+          coin_valut.style.color = 'red'
+          coin_valut.style.scale = '1.2'
+      },1000)
+      setTimeout(function(){
+          coin_valut.style.color = 'gold'
+          coin_valut.style.scale = '1'
+      },1500)
+      
+    }
+        }
+         
+      }
+
+  }
+     
+        
+
+         
+     
+    }
+
+
+
+ 
+)
+
+  //////////
+
+
+
+    let buyyyyyyyy = 'buyyyyyyyy'
+
+    let dozvill = 'no'
+    newmechanic.addEventListener('click', function(){
+     
+
+          if(buyyyyyyyy === 'buyyyyyyyy'){
+              if(dale === 'dale'){
+                if(dozvil === 'dozvil'){
+              
+              
+                    if(coin_valut.innerHTML >= 35000){
+                      coin = coin - 35000
+                      coin_valut.innerHTML = coin
+       
+                      newmechanic.innerHTML = 'Update mechanic 40000$ lv3'
+       
+                     
+                     
+                      setInterval(doz, 500)
+                      buyyyyyyyy = 'lol'
+                      dozvill = 'dozvill'
+                      
+                  }else{
+                    
+                     coin_valut.style.color = 'red'
+              coin_valut.style.scale = '1.2'
+              setTimeout(function(){
+                  coin_valut.style.color = 'gold'
+                  coin_valut.style.scale = '1'
+              },500)
+              setTimeout(function(){
+                  coin_valut.style.color = 'red'
+                  coin_valut.style.scale = '1.2'
+              },1000)
+              setTimeout(function(){
+                  coin_valut.style.color = 'gold'
+                  coin_valut.style.scale = '1'
+              },1500)
+              
+            }
+                }
+                 
+              }
+
+
+             }
+         
+        }
+
+   
+
+     
+    )
+    //////////////////
+
+let buySecond ='buy'
+  
+    newmechanicSecond.addEventListener('click', function(){
+     
+
+      if(buySecond === 'buy'){
+        if(daleSecond === 'dale'){
+            if(dozvilSecond === 'dozvil'){
+
+                
+          
+          
+                if(coin_valut.innerHTML >= 100000){
+                  coin = coin - 100000
+                  coin_valut.innerHTML = coin
+
+                  setInterval(dozSecond, 500)
+                  setInterval(dozSecond, 500)
+                  setInterval(dozSecond, 500)
+   
+                  newmechanicSecond.innerHTML = 'Update mechanic 150000$ lv3'
+
+
+   
+                  dozvilSecond = 'dozvill'
+                  daleSecond = 'dalee'
+
+                  buySecond ='lol'
+              }else{
+                
+                 coin_valut.style.color = 'red'
+          coin_valut.style.scale = '1.2'
+          setTimeout(function(){
+              coin_valut.style.color = 'gold'
+              coin_valut.style.scale = '1'
+          },500)
+          setTimeout(function(){
+              coin_valut.style.color = 'red'
+              coin_valut.style.scale = '1.2'
+          },1000)
+          setTimeout(function(){
+              coin_valut.style.color = 'gold'
+              coin_valut.style.scale = '1'
+          },1500)
+          
+        }
+            }
+             
+          }
+
+
+         }
+     
+    
+      }
+             
+
+   
+
+     
+    )
+  
+    //////////////////
+  
 
 
     
@@ -61,6 +431,10 @@ fir.addEventListener('click', function(){
 let cockie = document.cookie = `user-name=${coin_valut.innerHTML};max-age=100000000`
 
 let cockieSaved = false
+
+
+
+
 
 // let btnForUpg = document.querySelectorAll('.but')
 
@@ -123,7 +497,285 @@ let newWheels = document.querySelector('.wheels')
 let newSuvenirs = document.querySelector('.suvenirs')
 let newPendant = document.querySelector('.pendant')
 let newturbine = document.querySelector('.turbine')
-let newmechanic = document.querySelector('.mechanic')
+
+///////////////////////////////////////
+let buySeconddddd ='buy'
+let newMotorSecond = document.querySelector('.motorr')
+
+newMotorSecond.addEventListener('click', function(){
+
+
+    if(buySeconddddd ==='buy'){
+        if(coin_valut.innerHTML >= 200000){
+            coin = coin - 200000
+            coin_valut.innerHTML = coin
+    
+            second_car.addEventListener('click', function(){
+    
+                for (let i = 0; i < 150; i += 1) {
+                   coin[i] = coin++
+                }
+       
+                
+                    
+                    coin_valut.innerHTML = coin
+            })
+    
+            newMotorSecond.innerHTML = 'You bought it'
+            newMotorSecond.style.background = 'url(img/button/3434.970.jpg)'
+            newMotorSecond.style.backgroundSize = 'cover'
+    
+            buySeconddddd  ='lol'
+            
+        }else{
+          
+           coin_valut.style.color = 'red'
+    coin_valut.style.scale = '1.2'
+    setTimeout(function(){
+        coin_valut.style.color = 'gold'
+        coin_valut.style.scale = '1'
+    },500)
+    setTimeout(function(){
+        coin_valut.style.color = 'red'
+        coin_valut.style.scale = '1.2'
+    },1000)
+    setTimeout(function(){
+        coin_valut.style.color = 'gold'
+        coin_valut.style.scale = '1'
+    },1500)
+        }
+    }
+
+  
+
+
+}
+)
+////////////////////////////////////////////////////////
+
+let newWheelsSecond = document.querySelector('.wheelss')
+let buySecondddddd ='buy'
+newWheelsSecond.addEventListener('click', function(){
+
+if(buySecondddddd === 'buy'){
+    if(coin_valut.innerHTML >= 80000){
+        coin = coin - 80000
+        coin_valut.innerHTML = coin
+
+        second_car.addEventListener('click', function(){
+
+            for (let i = 0; i < 50; i += 1) {
+               coin[i] = coin++
+            }
+   
+            
+                
+                coin_valut.innerHTML = coin
+        })
+
+        newWheelsSecond.innerHTML = 'You bought it'
+        newWheelsSecond.style.background = 'url(img/button/3434.970.jpg)'
+        newWheelsSecond.style.backgroundSize = 'cover'
+        buySecondddddd ='lol'
+        
+        
+    }else{
+      
+       coin_valut.style.color = 'red'
+coin_valut.style.scale = '1.2'
+setTimeout(function(){
+    coin_valut.style.color = 'gold'
+    coin_valut.style.scale = '1'
+},500)
+setTimeout(function(){
+    coin_valut.style.color = 'red'
+    coin_valut.style.scale = '1.2'
+},1000)
+setTimeout(function(){
+    coin_valut.style.color = 'gold'
+    coin_valut.style.scale = '1'
+},1500)
+    }
+}
+
+
+   
+
+
+}
+)
+///////////////////////////////////////////////////
+
+
+let newSuvenirsSecond = document.querySelector('.suvenirss')
+
+let buySeconddddddd = 'buy'
+newSuvenirsSecond.addEventListener('click', function(){
+
+
+if(buySeconddddddd === 'buy'){
+    if(coin_valut.innerHTML >= 5000){
+        coin = coin - 5000
+        coin_valut.innerHTML = coin
+
+        second_car.addEventListener('click', function(){
+
+            for (let i = 0; i < 25; i += 1) {
+               coin[i] = coin++
+            }
+   
+            
+                
+                coin_valut.innerHTML = coin
+        })
+
+        newSuvenirsSecond.innerHTML = 'You bought it'
+        newSuvenirsSecond.style.background = 'url(img/button/3434.970.jpg)'
+        newSuvenirsSecond.style.backgroundSize = 'cover'
+
+        buySeconddddddd = 'lol'
+        
+    }else{
+      
+       coin_valut.style.color = 'red'
+coin_valut.style.scale = '1.2'
+setTimeout(function(){
+    coin_valut.style.color = 'gold'
+    coin_valut.style.scale = '1'
+},500)
+setTimeout(function(){
+    coin_valut.style.color = 'red'
+    coin_valut.style.scale = '1.2'
+},1000)
+setTimeout(function(){
+    coin_valut.style.color = 'gold'
+    coin_valut.style.scale = '1'
+},1500)
+    }
+
+}
+
+   
+
+}
+)
+
+//////////////////////////////////////////
+
+
+let newPendantSecond = document.querySelector('.pendantt')
+let buySecondddddddd = 'buy'
+newPendantSecond.addEventListener('click', function(){
+
+
+if(buySecondddddddd === 'buy'){
+    if(coin_valut.innerHTML >= 25000){
+        coin = coin - 25000
+        coin_valut.innerHTML = coin
+
+        second_car.addEventListener('click', function(){
+
+            for (let i = 0; i < 50; i += 1) {
+               coin[i] = coin++
+            }
+   
+            
+                
+                coin_valut.innerHTML = coin
+        })
+
+        newPendantSecond.innerHTML = 'You bought it'
+        newPendantSecond.style.background = 'url(img/button/3434.970.jpg)'
+        newPendantSecond.style.backgroundSize = 'cover'
+
+        buySecondddddddd = 'lol'
+        
+    }else{
+      
+       coin_valut.style.color = 'red'
+coin_valut.style.scale = '1.2'
+setTimeout(function(){
+    coin_valut.style.color = 'gold'
+    coin_valut.style.scale = '1'
+},500)
+setTimeout(function(){
+    coin_valut.style.color = 'red'
+    coin_valut.style.scale = '1.2'
+},1000)
+setTimeout(function(){
+    coin_valut.style.color = 'gold'
+    coin_valut.style.scale = '1'
+},1500)
+    }
+}
+
+   
+
+
+}
+)
+////////////////////////////////////////////
+
+
+let newturbineSecond = document.querySelector('.turbinee')
+let buySeconddddddddd = 'buy'
+newturbineSecond.addEventListener('click', function(){
+
+
+if(buySeconddddddddd === 'buy'){
+    if(coin_valut.innerHTML >= 150000){
+        coin = coin - 150000
+        coin_valut.innerHTML = coin
+
+        second_car.addEventListener('click', function(){
+
+            for (let i = 0; i < 100; i += 1) {
+               coin[i] = coin++
+            }
+   
+            
+                
+                coin_valut.innerHTML = coin
+        })
+
+        newturbineSecond.innerHTML = 'You bought it'
+        newturbineSecond.style.background = 'url(img/button/3434.970.jpg)'
+        newturbineSecond.style.backgroundSize = 'cover'
+
+        buySeconddddddddd = 'lol'
+        
+    }else{
+      
+       coin_valut.style.color = 'red'
+coin_valut.style.scale = '1.2'
+setTimeout(function(){
+    coin_valut.style.color = 'gold'
+    coin_valut.style.scale = '1'
+},500)
+setTimeout(function(){
+    coin_valut.style.color = 'red'
+    coin_valut.style.scale = '1.2'
+},1000)
+setTimeout(function(){
+    coin_valut.style.color = 'gold'
+    coin_valut.style.scale = '1'
+},1500)
+    }
+
+}
+
+   
+    
+    }
+)
+/////////////////////////////////////////////////////
+ 
+
+
+
+
+
+
 
 
 
@@ -387,6 +1039,13 @@ let newmechanic = document.querySelector('.mechanic')
              }})
 
 
+
+   
+   
+   
+   
+
+
              
          let buyyyyyy = 'buyyyyyy'
 
@@ -431,34 +1090,130 @@ let newmechanic = document.querySelector('.mechanic')
              }})
 
 
+             //////////////////
+       
+             let  masterPeopleSecond = document.querySelector('.master-clickerr')
+             
+             let  dymkuCoinSecond = document.querySelector('.coin-dymkuu')
+
+            let dymkuSecond = document.querySelector('.dymkuu')
+
+              let daleSecond = 'dale'
+              let dozvilSecond = 'no'
+
+
+let buySecondd = 'buy'
+
+             newmechanicSecond.addEventListener('click', function(){
+           if(buySecondd === 'buy'){
+            if(coin_valut.innerHTML >= 50000){
+                coin = coin - 50000
+                coin_valut.innerHTML = coin
+
+    
+
+                
+               
+                newmechanicSecond.innerHTML = 'Update mechanic 100000$ lv2'
+                masterPeopleSecond.style.display = 'flex'
+                // dymkuCoinSecond.style.display = 'flex'
+                // dymkuSecond.style.display = 'flex'
+                // dymkuCoinClaimSecond.style.display = 'flex'
+                
+                second_car.style.left = ' 58%'
+
+                buySecondd = 'lol'
+                
+                daleSecond = 'dale'
+                dozvilSecond = 'dozvil'
+                
+            }else{
+              
+               coin_valut.style.color = 'red'
+        coin_valut.style.scale = '1.2'
+        setTimeout(function(){
+            coin_valut.style.color = 'gold'
+            coin_valut.style.scale = '1'
+        },500)
+        setTimeout(function(){
+            coin_valut.style.color = 'red'
+            coin_valut.style.scale = '1.2'
+        },1000)
+        setTimeout(function(){
+            coin_valut.style.color = 'gold'
+            coin_valut.style.scale = '1'
+        },1500)
+            }
+       
+           }
+     
+                setInterval(dozSecond, 1000)
+                })
+                //  let coinnSecond = 0
+                function dozSecond(){
+                   
+                        for(let i = 0; i < 30; i += 1)
+                    coin[i] = coin++
+        
+                       
+                        coin_valut.innerHTML = coin
+                    }
+            
+                     
+                    
+            
+
+          
+
+        //   let  dymkuCoinClaimSecond =document.querySelector('.claim-dymku-coinn')
+
+        //   dymkuCoinClaimSecond.addEventListener('click', function(){
+            
+        //   coin_valut.innerHTML =  +dymkuCoinSecond.innerHTML + +coin_valut.innerHTML
+
+        //   dymkuCoinSecond.innerHTML = 0
+        //   coinnSecond = 0
+        //   })
+
+             /////////////////
+         
+
+
+
+
              let buyyyyyyy = 'buyyyyyyy'
              let  masterPeople =document.querySelector('.master-clicker')
              let dozvil = 'no'
              let  dymkuCoin =document.querySelector('.coin-dymku')
+             let coinMaster = document.querySelector('.coin-master')
 
             let dymku = document.querySelector('.dymku')
 
-
+              let dale = 'dale'
 
              newmechanic.addEventListener('click', function(){
                 if(buyyyyyyy === 'buyyyyyyy'){
-                    if(coin_valut.innerHTML >= 30000){
-                        coin = coin - 30000
+                    if(coin_valut.innerHTML >= 0){
+                        coin = coin - 20000
                         coin_valut.innerHTML = coin
     
             
     
-                        newmechanic.innerHTML = 'You bought it'
-                        newmechanic.style.background = 'url(img/button/3434.970.jpg)'
-                        newmechanic.style.backgroundSize = 'cover'
-        
+                        
+                       
+                        newmechanic.innerHTML = 'Update mechanic 35000$ lv2'
                         masterPeople.style.display = 'flex'
                         dymkuCoin.style.display = 'flex'
-                        dymku.style.display = 'flex'
-                        dymkuCoinClaim.style.display = 'flex'
+                        // dymku.style.display = 'flex'
+                        // dymkuCoinClaim.style.display = 'flex'
+                        // coinMaster.style.display = 'flex'
+                        first_car.style.left = ' 58%'
+
                         
 
                         buyyyyyyy = 'lol'
+                        
+                        dale = 'dale'
                         dozvil = 'dozvil'
                         
                     }else{
@@ -481,14 +1236,17 @@ let newmechanic = document.querySelector('.mechanic')
                
                 
                 }})
-                 let coinn = 0
+                //  let coin = 0
                 function doz(){
                     if(dozvil === 'dozvil'){
                         for(let i = 0; i < 15; i += 1)
-                    coinn[i] = coinn++
-        
-                        dymkuCoin.innerHTML = coinn
-
+                    coin[i] = coin++
+                    
+                       
+                    coin_valut.innerHTML = coin
+                        
+                       
+                       
                     }
             
                      
@@ -497,17 +1255,27 @@ let newmechanic = document.querySelector('.mechanic')
 
           setInterval(doz, 1000)
 
-          let  dymkuCoinClaim =document.querySelector('.claim-dymku-coin')
+ 
+        //   let  dymkuCoinClaim =document.querySelector('.claim-dymku-coin')
 
-          dymkuCoinClaim.addEventListener('click', function(){
+        //   dymkuCoinClaim.addEventListener('click', function(){
             
-          coin_valut.innerHTML =  +dymkuCoin.innerHTML + +coin_valut.innerHTML
-
-          dymkuCoin.innerHTML = 0
-          coinn = 0
-          })
-        
+        //  coin =  coinn + coin
+        //  coinn = 0
+        //   })
 
 
 
 
+
+
+
+
+
+
+
+
+       
+
+
+  

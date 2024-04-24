@@ -3,6 +3,8 @@ body{
   left: 0;
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 
@@ -92,21 +94,21 @@ body{
   left: 0;
   top: 0;
   background:url(img/garage/1524419450114219188.jpg) ;
-  background-size: 1500px 900px;
+  background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .first-car{
   display: flex;
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 55%;
   transform: translate(-50%,-50%);
   background:url(img/car/0bb786abd111853a98ddc843a0092619.png) ;
   background-size: cover;
-  width: 600px;
-  height: 750px;
+  width: 620px;
+  height: 490px;
   filter: drop-shadow(100px 100px 100px black);
   cursor: pointer;
   
@@ -180,34 +182,34 @@ body{
   display: flex;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 57%;
   transform: translate(-50%,-50%);
   background:url(img/car/png-transparent-seat-128-antique-car-vintage-car-cropped-image-transparent-background.png) ;
-  background-size: 700px;
+  background-size: 100%;
   width: 700px;
-  height: 750px;
+  height: 420px;
   filter: drop-shadow(100px 100px 100px black);
   cursor: pointer;
 }
 
 .second-car:hover{
-  width: 696px; 
-  height: 746px; 
+  width: 696px;
+  height: 416px;
 }
 
 .second-car:active{
-  width: 700px; 
-  height: 750px; 
+  width: 700px;
+  height: 420px;
 }
 
 .first-car:hover{
-  width: 592px; 
-  height: 740px; 
+  width: 616px;
+  height: 486px; 
 }
 
 .first-car:active{
-  width: 600px; 
-  height: 750px; 
+  width: 620px;
+  height: 490px;
 }
 
 .click-me{
@@ -288,7 +290,7 @@ h1 {
 
 
 .but {
-  font-size: 20px;
+  font-size: 110%;
   padding: 0.5em;
   border: transparent;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
@@ -322,7 +324,7 @@ h1 {
   bottom: 0;
   z-index: 2;
   width: 100%;
-  height: 80px;
+  height: 11%;
 background-color: rgba(0,0,0,0.6);
  }
 
@@ -332,13 +334,14 @@ background-color: rgba(0,0,0,0.6);
   right: 1%;
   margin: 0;
   z-index: 2;
+  width: 12%;
  }
 
  .coin-con{
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 180px;
+  width: 12%;
   background-color: #201f1f;
   z-index: 2;
   height: 70px;
@@ -353,8 +356,8 @@ background-color: rgba(0,0,0,0.6);
 
  .conteinerMain{
   display: flex;
-  width: 200px;
-  height: 89.1%;
+  width: 14%;
+  height: 89%;
   background-color: rgba(0,0,0,0.6);
   z-index: 1;
   position: absolute;
@@ -391,7 +394,7 @@ background-color: rgba(0,0,0,0.6);
   position: absolute;
   left: 23.5% ;
   top: 20%;
-  color: rgb(111, 95, 5);
+  color: rgb(255, 255, 255);
   font-size: 26px;
 }
 
@@ -400,8 +403,7 @@ background-color: rgba(0,0,0,0.6);
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 22.5% ;
-  top: 28.5%;
+ 
   width: 150px;
   height: 20px;
   text-align: center;
@@ -415,5 +417,20 @@ background-color: rgba(0,0,0,0.6);
 }
 
 .claim-dymku-coin:active{
-  background-color: rgb(3, 83, 3);
+  background-color: rgb(193, 199, 193);
+}
+
+.coin-master{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+position: absolute;
+left: 0;
+top: 0;
+width: 20%;
+height: 10%;
+background: rgba(0,0,0,0.6);
+z-index: 2;
 }
