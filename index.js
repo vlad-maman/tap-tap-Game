@@ -28,7 +28,7 @@ coin_valut.innerHTML = coin
 document.querySelector('.coin').innerHTML =  document.querySelector('.coin').innerHTML
 
 
-let coin = 1000000
+let coin = 0
 
 
 
@@ -1193,7 +1193,7 @@ let buySecondd = 'buy'
 
              newmechanic.addEventListener('click', function(){
                 if(buyyyyyyy === 'buyyyyyyy'){
-                    if(coin_valut.innerHTML >= 0){
+                    if(coin_valut.innerHTML >= 20000){
                         coin = coin - 20000
                         coin_valut.innerHTML = coin
     
