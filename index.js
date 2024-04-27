@@ -28,7 +28,7 @@ coin_valut.innerHTML = coin
 document.querySelector('.coin').innerHTML =  document.querySelector('.coin').innerHTML
 
 
-let coin = 1000000
+let coin = 0
 
 
 
@@ -1194,7 +1194,7 @@ let buySecondd = 'buy'
 
              newmechanic.addEventListener('click', function(){
                 if(buyyyyyyy === 'buyyyyyyy'){
-                    if(coin_valut.innerHTML >= 0){
+                    if(coin_valut.innerHTML >= 20000){
                         coin = coin - 20000
                         coin_valut.innerHTML = coin
     
@@ -1301,54 +1301,48 @@ let buySecondd = 'buy'
 
         
 
+        let aboutScrol = document.querySelector('.about-btn')
 
-
-
-
-
-
-let aboutScrol = document.querySelector('.about-btn')
-
-aboutScrol.addEventListener('click', function(){
-    window.scrollBy({
-        top: 735,
-        behavior : "smooth"
-      });
-})
-
-let developersScrol = document.querySelector('.developers-btn')
-
-developersScrol.addEventListener('click', function(){
-    window.scrollBy({
-        top: 1460,
-        behavior : "smooth"
-      });
-})
-
-
-let GameStart = document.querySelector('.Game-Start')
-let GameStartBtn = document.querySelector('.game-btn')
-let MainClose= document.querySelector('.main')
-
-GameStartBtn.addEventListener('click', function(){
-    GameStart.style.display = 'flex'
-    MainClose.style.display = 'none'
-})
-
-let goHome= document.querySelector('.button')
-
-goHome.addEventListener('click', function(){
-    GameStart.style.display = 'none'
-    MainClose.style.display = 'flex'
-})
-
-
-let goHomeTwo= document.querySelector('.btn-2')
-
-goHomeTwo.addEventListener('click', function(){
-  
-    MainClose.style.display = 'flex'
-    second_slide.style.display = 'none'
-    firs_upg.style.display = 'none'
-    GameStart.style.display = 'none'
-})
+        aboutScrol.addEventListener('click', function(){
+            window.scrollBy({
+                top: 735,
+                behavior : "smooth"
+              });
+        })
+        
+        let developersScrol = document.querySelector('.developers-btn')
+        
+        developersScrol.addEventListener('click', function(){
+            window.scrollBy({
+                top: 1460,
+                behavior : "smooth"
+              });
+        })
+        
+        
+        let GameStart = document.querySelector('.Game-Start')
+        let GameStartBtn = document.querySelector('.game-btn')
+        let MainClose= document.querySelector('.main')
+        
+        GameStartBtn.addEventListener('click', function(){
+            GameStart.style.display = 'flex'
+            MainClose.style.display = 'none'
+        })
+        
+        let goHome= document.querySelector('.button')
+        
+        goHome.addEventListener('click', function(){
+            GameStart.style.display = 'none'
+            MainClose.style.display = 'flex'
+        })
+        
+        
+        let goHomeTwo= document.querySelector('.btn-2')
+        
+        goHomeTwo.addEventListener('click', function(){
+          
+            MainClose.style.display = 'flex'
+            second_slide.style.display = 'none'
+            firs_upg.style.display = 'none'
+            GameStart.style.display = 'none'
+        })
