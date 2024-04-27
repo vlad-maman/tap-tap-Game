@@ -161,7 +161,7 @@ if(buySeconddd === 'buy'){
        
       }
 
-      
+
 
  
 ///////////////////////////////
@@ -238,7 +238,7 @@ if(buySeconddd === 'buy'){
               coin = coin - 150000
               coin_valut.innerHTML = coin
 
-              newmechanicSecond.innerHTML = 'Update mechanic 20000$ lv4'
+              newmechanicSecond.innerHTML = 'Update mechanic 200000$ lv4'
              
               setInterval(dozSecond, 500)
               setInterval(dozSecond, 500)
@@ -416,6 +416,7 @@ Start.addEventListener('click', function(){
     first_slide.style.display = 'none'
     second_slide.style.display = 'flex'
     firs_upg.style.display = 'flex'
+    GameStart.style.display = 'none'
 })
 
 
@@ -1203,10 +1204,11 @@ let buySecondd = 'buy'
                        
                         newmechanic.innerHTML = 'Update mechanic 35000$ lv2'
                         masterPeople.style.display = 'flex'
-                        dymkuCoin.style.display = 'flex'
+                        // dymkuCoin.style.display = 'flex'
                         // dymku.style.display = 'flex'
                         // dymkuCoinClaim.style.display = 'flex'
                         // coinMaster.style.display = 'flex'
+                        // bust.style.display = 'flex'
                         first_car.style.left = ' 58%'
 
                         
@@ -1264,18 +1266,89 @@ let buySecondd = 'buy'
         //  coinn = 0
         //   })
 
+        // let bust = document.querySelector('.bust')
 
-
-
-
-
-
-
-
-
-
+        // bust.addEventListener('click', function(){
+        //     let timeSec = 0
+        //     let dovolimotimo = 'yea'
+        //     function time(){
+        //         bust.innerHTML = timeSec
+                
+        //         timeSec = timeSec + 1 
+                
+             
+        //     }
 
        
+        //     if(+bust.innerHTML === 10){
+                
+        //         console.log('a')
+        //     }
+
+        //     if(dovolimotimo === 'yea'){
+        //         setInterval(time, 10)   
+        //     }
+
+        
+            
+             
+            
+                
+        //         bust.style.backgroundColor = 'red'
+                
+                 
+        // })
+
+        
 
 
+
+
+
+
+
+let aboutScrol = document.querySelector('.about-btn')
+
+aboutScrol.addEventListener('click', function(){
+    window.scrollBy({
+        top: 735,
+        behavior : "smooth"
+      });
+})
+
+let developersScrol = document.querySelector('.developers-btn')
+
+developersScrol.addEventListener('click', function(){
+    window.scrollBy({
+        top: 1460,
+        behavior : "smooth"
+      });
+})
+
+
+let GameStart = document.querySelector('.Game-Start')
+let GameStartBtn = document.querySelector('.game-btn')
+let MainClose= document.querySelector('.main')
+
+GameStartBtn.addEventListener('click', function(){
+    GameStart.style.display = 'flex'
+    MainClose.style.display = 'none'
+})
+
+let goHome= document.querySelector('.button')
+
+goHome.addEventListener('click', function(){
+    GameStart.style.display = 'none'
+    MainClose.style.display = 'flex'
+})
+
+
+let goHomeTwo= document.querySelector('.btn-2')
+
+goHomeTwo.addEventListener('click', function(){
   
+    MainClose.style.display = 'flex'
+    second_slide.style.display = 'none'
+    firs_upg.style.display = 'none'
+    GameStart.style.display = 'none'
+})
