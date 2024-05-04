@@ -28,7 +28,7 @@ coin_valut.innerHTML = coin
 document.querySelector('.coin').innerHTML =  document.querySelector('.coin').innerHTML
 
 
-let coin = 0
+let coin = 5000000
 
 
 
@@ -416,7 +416,7 @@ Start.addEventListener('click', function(){
     first_slide.style.display = 'none'
     second_slide.style.display = 'flex'
     firs_upg.style.display = 'flex'
-    GameStart.style.display = 'none'
+    
 })
 
 
@@ -1320,19 +1320,16 @@ let buySecondd = 'buy'
         })
         
         
-        let GameStart = document.querySelector('.Game-Start')
+      
         let GameStartBtn = document.querySelector('.game-btn')
         let MainClose= document.querySelector('.main')
         
-        GameStartBtn.addEventListener('click', function(){
-            GameStart.style.display = 'flex'
-            MainClose.style.display = 'none'
-        })
+     
         
         let goHome= document.querySelector('.button')
         
         goHome.addEventListener('click', function(){
-            GameStart.style.display = 'none'
+        
             MainClose.style.display = 'flex'
         })
         
@@ -1344,5 +1341,5 @@ let buySecondd = 'buy'
             MainClose.style.display = 'flex'
             second_slide.style.display = 'none'
             firs_upg.style.display = 'none'
-            GameStart.style.display = 'none'
+          
         })

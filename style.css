@@ -17,16 +17,15 @@ body{
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translatex(-50%);
   outline: none;
   cursor: pointer;
   width: 180px;
-  height: 70px;
-  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
-  background: url(img/button/8b31480480a2f7b7ae0161155337938a.jpg);
-  background-size:50px ;
+  height: 50px;
+  background-image: linear-gradient(to top, #7c5542 0%, #563305 80%, #4f4945 100%);
+
   border-radius: 30px;
   border: 1px solid #8F9092;
   transition: all 0.2s ease;
@@ -35,6 +34,7 @@ body{
   font-weight: 600;
   color: rgb(156, 143, 143);
   text-shadow: 0 1px #fff;
+
 
   z-index: 2;
 }
@@ -62,26 +62,7 @@ body{
   background: black;
 }
 
-.first-garage{
-  position: absolute;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: url(img/garage/1524419450114219188.jpg);
-  background-size:100%
-  100%;
-}
 
-.second-garage{
-  position: absolute;
-  left: 50%;
-  width: 50%;
-  height: 100%;
-  background: url(img/garage/1646920464_1-amiel-club-p-krasivii-garazh-vnutri-interer-krasivo-fot-1.jpg);
-  background-size:100%
-  100%;
-  
-}
 
 .game{
   display: none;
@@ -97,7 +78,7 @@ body{
   position: absolute;
   left: 0;
   top: 0;
-  background:url(img/garage/1524419450114219188.jpg) ;
+  background:url(https://media.discordapp.net/attachments/1212665169830739998/1233815471594147982/1620171305_42-p-garazh-vnutri-na-uchastke-47.png?ex=662e77b3&is=662d2633&hm=b38a310826cb0e63bfa6d90b1b0b09f80ad96ccdea84767dff31a2993b81f7a5&=&format=webp&quality=lossless&width=993&height=662) ;
   background-size: 100%
   100%;
   width: 100%;
@@ -113,8 +94,8 @@ body{
   background:url(img/car/0bb786abd111853a98ddc843a0092619.png) ;
   background-size: 100%
   100%;
-  width: 620px;
-  height: 490px;
+  width: 40%;
+  height: 60%;
   filter: drop-shadow(100px 100px 100px black);
   cursor: pointer;
   
@@ -151,8 +132,8 @@ body{
   position: absolute;
   left: 0;
   top: 0;
-  background:url(img/garage/1634320508_14-p-kak-oblagorodit-garazh-vnutri-foto-19.jpg) ;
-  background-size:1600px 900px;
+  background:url(img/garage/fadfce82daef92615329df2ea50e3fd3.jpg) ;
+  background-size:100% 100%;
   width: 100%;
   height: 100%;
 
@@ -209,13 +190,13 @@ body{
 }
 
 .first-car:hover{
-  width: 616px;
-  height: 486px; 
+  width: 39.6%;
+  height: 59.5%;
 }
 
 .first-car:active{
-  width: 620px;
-  height: 490px;
+  width: 40%;
+  height: 60%;
 }
 
 .click-me{
@@ -581,7 +562,8 @@ header{
 
   width: 100%;
   height: 100vh;
-  z-index: 1;
+  z-index: 0;
+  background:url(img/1701417649_sportishka-com-p-oboi-v-stile-mashin-instagram-1.jpg) ;
 
 }
 
@@ -709,42 +691,61 @@ color: rgb(54, 3, 3) ;
 .lastivka{
   position: absolute;
   top: 20%;
-  left: -1%;
+  left: 84%;;
   width: 100px;
   transition:  all 1s;
-  animation: Hell2 1s ease-in forwards ;
+  animation: Hell2 1.2s ease-in forwards ;
+  font-size: 40px;
+  font-style: italic;
+  color: rgb(224, 224, 224);
+  font-weight: 1000;
 }
-
 
 @keyframes Hell2 {
   0%{
-    left: -1%;
+    scale: 0;
+  }
+  50%{
+    scale: 0;
   }
   100%{
-    top: 20%;
-    left: 84%;
+scale: 1;
    
   }
 }
 
 .lastivka-2{
   position: absolute;
-  top: 90%;
-  left: -1%;
-  width: 100px;
- 
+  top: 50%;
+  left: 55%;
+  width: fit-content;
+ scale: 0;
   transition:  all 1s;
-  animation: Hell3 1.1s ease-in forwards ;
+  animation: Hell3 4s ease-in forwards ;
+  font-size: 40px;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  font-weight: 1000;
+  
 }
 
 
 @keyframes Hell3 {
   0%{
-    left: -1%;
+    scale: 0;
+  }
+  25%{
+    scale: 0;
+  }
+  50%{
+    scale: 1.5;
+  }
+  75%{
+    scale: 1;
+    
   }
   100%{
-    top: 50%;
-    left: 55%;
+scale: 1;
    
   }
 }
@@ -758,6 +759,8 @@ color: rgb(54, 3, 3) ;
   position: absolute;
   top: 100%;
   left: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -863,79 +866,150 @@ color: rgb(54, 3, 3) ;
   height: 100%;
 }
 
-.button {
-  display: flex;
-  position: absolute;
-  left: 3%;
-  top: 3%;
-  width: 56px;
-  height: 56px;
-  margin: 0;
-  overflow: hidden;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-  border: 0;
-  z-index: 2;
-  scale: 1.5;
+
+
+.Rase{
+position: absolute;
+   top: -20px;
+  width: 60px;
+  height: 60px;
+  margin:10px ;
 }
 
-.button:before,
-.button:after {
-  content: "";
+.photo-game{
+  width: 35%;
+  height: 350px;
+  background: url(img/photo-game.jpg);
+  background-size: cover;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Logo-Name{
+  display: inline-block;
+  position: relative;
+  top: -8%;
+  left: 7%;
+  font-size: 50px;
+  color: rgb(169, 106, 106);
+  z-index: 2;
+  font-weight: 900;
+  font-style: oblique;
+}
+
+.how-play{
+  display: inline-block;
+  position: absolute;
+  top: 14%;
+  left: 7%;
+  font-size: 30px;
+  width: 60%;
+  color: rgb(163, 141, 141);
+  z-index: 2;
+  font-style: italic;
+}
+
+.about-game-inf{
+  display: flex;
+  flex-wrap: nowrap;
+
+  margin-left: 1%;
+  width: 50%;
+  background-color: rgba(69, 20, 20, 0.4);
+  height: 80% ;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translateY(-50%);
+  
+}
+
+.vrap{
+  position: absolute;
+  top: 25%;
+  left: 0;
+width: 100%;
+height: 60%;
+background-color: rgba(0, 0, 0, 0.333);
+display: flex;
+flex-wrap: wrap;
+}
+
+.button {
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  z-index: 2;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 10px 10px 40px;
+}
+
+
+
+.button span {
+  opacity: 0;
+  color: #858BA9;
+  font-size: 19px;
+  font-weight: 300;
+  display: inline-block;
+  transform: translateY(10px);
+  transition:
+    transform 500ms 0s cubic-bezier(0.2, 0, 0, 1),
+    opacity 500ms 0s cubic-bezier(0.2, 0, 0, 1)
+}
+
+.button div {
+  top: 11px;
+  left: 0;
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  overflow: hidden;
   position: absolute;
   border-radius: 50%;
-  inset: 7px;
-}
-
-.button:before {
-  border: 4px solid #ffffff;
-  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
-    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
-}
-
-.button:after {
-  border: 4px solid #49a9ca;
-  transform: scale(1.3);
-  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
-    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  opacity: 0;
-}
-
-.button:hover:before,
-.button:focus:before {
-  opacity: 0;
-  transform: scale(0.7);
-  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
-    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.button:hover:after,
-.button:focus:after {
-  opacity: 1;
   transform: scale(1);
-  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
-    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+  background-color: #E9E7F2;
+  transition: transform 400ms 0s cubic-bezier(0.2, 0, 0, 1.6);
 }
 
-.button-box {
-  display: flex;
-  position: absolute;
+.button div::after {
   top: 0;
   left: 0;
+  content: '';
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  background-position: 0 0;
+  background-image: url('https://s3-eu-west-1.amazonaws.com/thomascullen-codepen/back.svg');
+  transition: transform 400ms 0s cubic-bezier(0.2, 0, 0, 1);
 }
 
-.button-elem {
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin: 17px 18px 0 18px;
-  transform: rotate(180deg);
-  fill: #008d03;
+
+
+.button:hover span {
+  opacity: 1;
+  transform: translateY(4px);
 }
 
-.button:hover .button-box,
-.button:focus .button-box {
-  transition: 0.4s;
-  transform: translateX(-56px);
+.button:hover div {
+  transform: scale(1.1);
+  background-color: white;
+  box-shadow:
+    0 2px 10px 0 rgba(185,182,198,0.00),
+    0 1px 3px 0 rgba(175,172,189,0.25);
+}
+
+.button:hover div::after {
+  transform: translateX(-30px);
+}
+
+
+.shop{
+  position: absolute;
+  top: 3%;
+  left: 10%;
 }
