@@ -6,7 +6,8 @@ body{
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
- 
+  
+ font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -71,6 +72,8 @@ body{
   position: absolute;
   left: 0;
   top: 0;
+  overflow-y: hidden;
+
 }
 
 .first-upgrade{
@@ -78,7 +81,7 @@ body{
   position: absolute;
   left: 0;
   top: 0;
-  background:url(https://media.discordapp.net/attachments/1212665169830739998/1233815471594147982/1620171305_42-p-garazh-vnutri-na-uchastke-47.png?ex=662e77b3&is=662d2633&hm=b38a310826cb0e63bfa6d90b1b0b09f80ad96ccdea84767dff31a2993b81f7a5&=&format=webp&quality=lossless&width=993&height=662) ;
+  background:url(img/garage/1620171305_42-p-garazh-vnutri-na-uchastke-47.png) ;
   background-size: 100%
   100%;
   width: 100%;
@@ -89,7 +92,7 @@ body{
   display: flex;
   position: absolute;
   left: 50%;
-  top: 55%;
+  top: 60%;
   transform: translate(-50%,-50%);
   background:url(img/car/0bb786abd111853a98ddc843a0092619.png) ;
   background-size: 100%
@@ -169,7 +172,7 @@ body{
   display: flex;
   position: absolute;
   left: 50%;
-  top: 57%;
+  top: 70%;
   transform: translate(-50%,-50%);
   background:url(img/car/png-transparent-seat-128-antique-car-vintage-car-cropped-image-transparent-background.png) ;
   background-size: 100%;
@@ -177,6 +180,7 @@ body{
   height: 420px;
   filter: drop-shadow(100px 100px 100px black);
   cursor: pointer;
+  z-index: 2;
 }
 
 .second-car:hover{
@@ -219,7 +223,7 @@ body{
   align-items: center;
   color: gold;
   z-index: 2;
-  font-size: 40px;
+  font-size: 30px;
  
 }
 
@@ -281,21 +285,51 @@ h1 {
   padding: 0.5em;
   border: transparent;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-
-  color: rgb(255, 255, 255);
+  margin-bottom: 20% ;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
   border-radius: 4px;
   width: 180px;
-  height: 70px;
+  height: 80px;
   cursor: pointer;
-  background: url(img/button/pngtree-messy-area-full-of-trash-and-garbage-image_2671959.jpg);
-  background-size: cover;
+  background: url(https://st2.depositphotos.com/5647624/45006/i/450/depositphotos_450060830-stock-photo-spanners-many-wrenches-industrial-background.jpg);
+  background-size: 100% 100%;
+  box-shadow: 7px 8px 15px black;
+ }
+
+ .butt {
+  font-size: 110%;
+  padding: 0.5em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  margin-bottom: 5% ;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  font-weight: 800;
+  width: 180px;
+  height: 80px;
+  cursor: pointer;
+  background: url(https://st2.depositphotos.com/5647624/45006/i/450/depositphotos_450060830-stock-photo-spanners-many-wrenches-industrial-background.jpg);
+  background-size: 100% 100%;
+  box-shadow: 7px 8px 15px black;
+ 
  }
  
+ .butt:hover {
+
+  filter:contrast(70%)  ;
+  box-shadow: 8px 9px 20px black;
+ }
+ 
+ .butt:active {
+  transform: translate(0em, 0.2em);
+ }
+
+
  .but:hover {
 
-  background: url(img/button/pngtree-messy-area-full-of-trash-and-garbage-image_2671959.jpg), ;
+  box-shadow: 8px 9px 20px black;
   filter:contrast(80%)  ;
-  background-size: cover;
  }
  
  .but:active {
@@ -315,26 +349,17 @@ h1 {
 background-color: rgba(0,0,0,0.6);
  }
 
- .garage{
-  position: absolute;
-  top: 32%;
-  right: 1%;
-  margin: 0;
-  z-index: 2;
-  width: 12%;
- }
+
 
  .coin-con{
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 12%;
-  background-color: #201f1f;
   z-index: 2;
-  height: 70px;
+  height: fit-content;
   position: absolute;
-  top: 2%;
-  right: 1%;
+  margin-right: -1240px;
+
   border-radius: 20px;
   overflow: hidden;
   
@@ -360,7 +385,7 @@ background-color: rgba(0,0,0,0.6);
   height: 500px;
   position: absolute;
   left: 2% ;
-  bottom: 12%;
+  bottom: 8%;
 }
 
 .dymku{
@@ -369,8 +394,8 @@ background-color: rgba(0,0,0,0.6);
   width: 220px;
   height: 150px;
   position: absolute;
-  left: 20% ;
-  top: 17%;
+  left: 30% ;
+  top: 30%;
 }
 
 .coin-dymku{
@@ -604,6 +629,24 @@ header{
 }
 
 .decoration-image-2t{
+  position: absolute;
+   top: 100%;
+   left: 0;
+  width: 100%;
+  height: 10%;
+  font-weight: 700;
+  background-color: rgb(93, 40, 40);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-style: italic;
+  box-shadow: -7px -9px 20px black,  0px 7px 20px rgb(100, 98, 98);
+ 
+}
+
+.decoration-image-3t{
   position: absolute;
    top: 100%;
    left: 0;
@@ -938,9 +981,7 @@ flex-wrap: wrap;
 }
 
 .button {
-  position: absolute;
-  top: 2%;
-  left: 3%;
+
   z-index: 2;
   display: inline-block;
   text-decoration: none;
@@ -1008,8 +1049,540 @@ flex-wrap: wrap;
 }
 
 
-.shop{
+.shop , .shopp{
+  display: flex;
+  justify-content: center;
+  
+  flex-wrap: wrap;
   position: absolute;
+  top: 0%;
+  left: -50%;
+  width: 20%;
+  max-height:100vh;
+  background-color: #201f1f;
+  z-index: 3;
+
+  overflow-y: scroll;
+  border-top-right-radius: 6.5px;
+  box-shadow: 10px 19px 20px black;
+}
+
+.shop,.shopp::-webkit-scrollbar{
+  background-color: #000000;
+
+  border-radius:50px ;
+
+}
+
+
+
+
+.shop,.shopp::-webkit-scrollbar-thumb{
+  background-color: #4b4f55;
+  border-radius: 18px;
+ 
+ 
+}
+
+.shop::-webkit-scrollbar{
+  background-color: #000000;
+
+  border-radius:50px ;
+
+}
+
+.shop::-webkit-scrollbar-thumb{
+  background-color: #4b4f55;
+  border-radius: 18px;
+ 
+ 
+}
+
+
+
+.Close-shop{
+
+  position: sticky;
+  left: 0%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: red;
+  font-size: 30px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  
+
+}
+
+
+.Close-shop:hover{
+  background-color: rgb(137, 15, 15);
+}
+
+.Close-shop:active{
+  background-color: rgb(105, 10, 10);
+}
+
+.buttonn-container {
+  position: absolute;
+  left: 3%;
   top: 3%;
-  left: 10%;
+ 
+  display: flex;
+  background-color: rgba(0, 73, 144);
+  width: 30%;
+  height: 5%;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(0, 73, 144, 0.5) 5px 10px 15px;
+  transition: all 0.5s;
+}
+.buttonn-container:hover {
+  width: 12%;
+  transition: all 0.5s;
+}
+
+.buttonn {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.buttonn:hover {
+  transform: translateY(-3px);
+}
+
+.iconn {
+  font-size: 20px;
+}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  max-height: max-content;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  position: absolute;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nexttt { 
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.nexttt:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  height: 5%;
+  z-index: 2;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+  display: inline;
+  position: absolute;
+  top: 105%;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+  z-index: 2;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+ position: relative;
+ 
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+  
+}
+
+
+.tooltip {
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+  display: inline-block;
+  cursor: pointer;
+  font-family: "Arial", sans-serif;
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: fit-content;
+  background-color: transparent;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: -145%;
+  left:-150%;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 3;
+}
+
+
+
+.tooltip .icon {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: #342f2f;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 25px;
+}
+
+
+section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  --col-orange: #d17842;
+  --col-dark: #0c0f14;
+  --col-darkGray: #52555a;
+  --col-gray: #aeaeae;
+
+  height: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap ;
+  justify-content: space-evenly;
+  background-color: var(--col-dark);
+  width: 100%;
+  z-index: 2;
+ 
+}
+.label  {
+  padding: 0px 0px;
+  transition: all 200ms;
+  display: inline-block;
+  
+ 
+}
+
+.label input[type="radio"] {
+  display: none;
+}
+.label > svg {
+  transition: all 200ms;
+  fill: var(--col-gray);
+  width: 20px;
+  
+}
+.label:hover:not(:has(input:checked)) > svg {
+  fill: #d17842;
+  opacity: 0.6;
+
+}
+.label::before {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+  top: 20px;
+  background: var(--col-orange);
+  transition: all 200ms;
+  
+}
+.label > svg {
+  transition: 300ms;
+  fill: var(--col-darkGray);
+  margin-top: 0;
+}
+.label:has(input:checked) > svg  {
+  display: flex;
+  fill: var(--col-orange);
+  scale: 1.2;
+  margin-top: -5px;
+}
+
+
+
+.label:has(input:checked)::before {
+  width: 100%;
+  left: 0;
+  top: 25px;
+}
+
+.name-home{
+  position: absolute;
+  top: -30%;
+  display: inline;
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 800;
+  transition: all 200ms;
+  color: #d4c8c0 ;
+  display: flex;
+  fill: var(--col-orange);
+  scale: 1.2;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.btn-2{
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  border: none;
+}
+
+.name-homee{
+  position: absolute;
+  top: -30%;
+  display: inline;
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 800;
+  transition: all 200ms;
+  color: #d4c8c0 ;
+  display: flex;
+  fill: var(--col-orange);
+  scale: 1.2;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+
+
+
+.updates{
+
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: url(https://kartinki.pics/pics/uploads/posts/2022-08/1659666910_1-kartinkin-net-p-zastavki-dlya-masterskoi-krasivo-1.jpg);
+  background-size: 170% 100%;
+  padding-top: 30%;
+  border-bottom: 15px solid rgb(139, 7, 7);
+}
+
+.garages0up{
+  height: max-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  background: url(img/garage/fadfce82daef92615329df2ea50e3fd3.jpg);
+  background-size: 100% 100%;
+  padding-top: 20%;
+}
+
+
+
+
+.domcrat{
+  display: none;
+  position: absolute;
+  right: 15%;
+  bottom: 8%;
+  width: 300px;
+  height: 190px;
+}
+
+.domcratt{
+  display: none;
+  position: absolute;
+  right: 15%;
+  bottom: 5%;
+  width: 300px;
+  height: 190px;
+  z-index: 1;
+}
+
+.acs{
+  width: 80%;
+  height: 100%;
+  filter: drop-shadow(7px 6px 10px orange);
+margin: 0;
+  background: url(img/2_310.png);
+  background-size: 100% 100%;
+  
+}
+
+.suvenir-conteiner-btn{
+  width: 29px;
+  height: 30px;
+  transition: all 200ms;
+  cursor: pointer;
+  
+}
+
+.suvenir-conteiner-btn:hover{
+scale:0.9;
+}
+
+.suvenir-conteiner-btn:active{
+  
+  scale:1;
+  }
+
+  .suvenir-conteiner{
+
+    overflow-y: scroll;
+    display: none;
+    justify-content: center;
+   
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    padding: 5% 15%;
+    z-index: 3;
+  }
+
+
+.con-for-asc{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: center;
+  width: 40%;
+  height: 50%;
+  border: 2px solid orange;
+  box-shadow: 12px 10px 15px rgb(17, 17, 51) ,-12px -10px 15px rgb(30, 30, 81) ;
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+  font-weight: 500;
+  margin: 5%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.suvenir-conteiner-Close{
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 8px black);
 }
