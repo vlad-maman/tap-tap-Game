@@ -44,7 +44,7 @@ coin_valut.innerHTML = coin
 document.querySelector('.coin').innerHTML =  document.querySelector('.coin').innerHTML
 
 
-let coin = 50000000000
+let coin = 5000
 
 
 
