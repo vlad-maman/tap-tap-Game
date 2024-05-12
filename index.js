@@ -38,14 +38,32 @@ first_car.addEventListener('click', function(){
     coin++
 coin_valut.innerHTML = coin
 
+
+
 })
 
 
 document.querySelector('.coin').innerHTML =  document.querySelector('.coin').innerHTML
 
 
-let coin = 50000000000
+let coin = 999999
 
+let coinqua = coin
+
+let massege = 0
+let massegeInner = document.querySelector('.massage')
+
+function massagePer(){
+    if(massege === 0 ){
+        massegeInner.style.display = 'none'
+     
+    }
+    if(massege > 0 ){
+        massegeInner.style.display = 'inline'
+        massegeInner.innerHTML = massege
+       
+    }
+} 
 
 
 second_car.addEventListener('click', function(){
@@ -145,7 +163,7 @@ if(buySeconddd === 'buy'){
                     newmechanic.innerHTML = 'You bought it'
                     newmechanic.style.background = 'url(img/button/3434.970.jpg)'
                     newmechanic.style.backgroundSize = 'cover'
-     
+                    
                    
                     setInterval(doz, 1000)
                     buyyyyyyyyyy = 'lol'
@@ -432,7 +450,7 @@ Start.addEventListener('click', function(){
     first_slide.style.display = 'none'
     second_slide.style.display = 'flex'
     firs_upg.style.display = 'flex'
-    
+ 
 })
 
 
@@ -445,66 +463,7 @@ fir.addEventListener('click', function(){
    
 })
 
-let cockie = document.cookie = `user-name=${coin_valut.innerHTML};max-age=100000000`
 
-let cockieSaved = false
-
-
-
-
-
-// let btnForUpg = document.querySelectorAll('.but')
-
-
-// let youAlredyBuyIt = 'dont'
-
-//  class User{
-//    constructor(namebtn, price,) {
-//        this.namebtn = namebtn
-//        this.price= price
-
-//    }
-// }
-
-// let btn1 = new User('Buy New wheels', 200 )
-// let btn2 = new User('Buy motor', 5000 )
-// let btn3 = new User('Buy suvenirs', 50 )
-// let btn4 = new User('Buy new Garage', 5000 )
-
-
-
-// btnForUpg.forEach((item) => {
-//     item.addEventListener('click', function(){
-
-//        if(coin_valut.innerHTML <= '4'){
-//             alert('you haven`t enought money')
-//         } 
-       
-        
-// if(youAlredyBuyIt === 'dont'){
-//     if(coin_valut.innerHTML >= '5'){
-
-             
-//         youAlredyBuyIt = 'Buy'
-
-//         first_car.addEventListener('click', function(){
-//             coin++
-//         coin_valut.innerHTML = coin
-       
-
-    
-//         })
-//         item.innerHTML = 'you alredy buy this'
-//     }
-
-   
-// }
-     
-
-            
-//         }
-//     )
-//     })
 
 
 
@@ -797,7 +756,7 @@ setTimeout(function(){
 
 
         let buyy = 'buyy'
-
+        let motorpo = document.querySelector('.motorrr')
         newMotor.addEventListener('click', function(){
             if(buyy === 'buyy'){
                 if(coin_valut.innerHTML >= 10000){
@@ -811,11 +770,15 @@ setTimeout(function(){
                                    coin++
                             coin_valut.innerHTML = coin
                     })
-
+                    achuvemant = achuvemant +1
                     newMotor.innerHTML = 'You bought it'
                     newMotor.style.background = 'url(img/button/3434.970.jpg)'
                     newMotor.style.backgroundSize = 'cover'
-    
+                    motorpo.style.background = 'url(img/motor.webp)'
+                    motorpo.style.backgroundSize = '100% 100%'
+                    massege = massege + 1
+                    per()
+                    massagePer()
                     buyy = 'lol'
                     
                 }else{
@@ -853,12 +816,15 @@ setTimeout(function(){
                                 
                                 coin_valut.innerHTML = coin
                         })
-    
+                        achuvemant = achuvemant +1
                         newSuvenirs.innerHTML = 'You bought it'
                         newSuvenirs.style.background = 'url(img/button/3434.970.jpg)'
                         newSuvenirs.style.backgroundSize = 'cover'
-                        ronaldo.style.background = 'url(img/H39167589bab84e58bbcf4f119c72aaa23.png_300x300.avif)'
-        
+                        ronaldo.style.background = 'url(img/dog.png)'
+                        ronaldo.style.backgroundSize = '100% 100%'
+                        massege = massege + 1
+                        per()
+                        massagePer()
                         buyyy = 'lol'
                         
                     }else{
@@ -887,6 +853,7 @@ setTimeout(function(){
 
                 let buyyyy = 'buyyyy'
                 let wheelsac = document.querySelector('.wheelsac')
+                
                 newWheels.addEventListener('click', function(){
                     if(buyyyy === 'buyyyy'){
                         if(coin_valut.innerHTML >= 1000){
@@ -905,6 +872,50 @@ setTimeout(function(){
                             newWheels.style.backgroundSize = 'cover'
                             wheelsac.style.background = 'url(img/asanti-ab050bd-mogul-6-26x10-6-et30-gloss-black-w-machined-face-a1-png.webp)'
                             wheelsac.style.backgroundSize = '100% 100%'
+                            massege = massege + 1
+                            massagePer()
+                            
+
+                            achuvemant = achuvemant +1
+                            per()
+                            ///////////////////////
+
+                         
+                               
+                                    claimQuetionThir.style.background = 'green'
+                                    claimQuetionThir.innerHTML = 'Claim'
+                                    claimQuetionThir.style.cursor = 'pointer'
+                            
+                                
+                                    wheelQuetion = 'noyes'
+                          
+                            
+                       
+                                claimQuetionThir.addEventListener('click', function(){
+                                    if(wheelQuetion === 'noyes'){
+                                        coin_valut.innerHTML =   +coin_valut.innerHTML + 5000
+                                        coin = coin + 5000
+                                        
+                                    
+                                        claimQuetionThir.style.background = 'grey'
+                                        claimQuetionThir.innerHTML = 'Claimed'
+                                        wheelQuetion = 'noyesno'
+                                    }
+                                    
+                                })
+                                
+                           
+                            
+                       
+                            
+                            
+
+                            //////////////////////
+
+
+
+
+
                             buyyyy = 'lol'
                             
                         }else{
@@ -934,7 +945,9 @@ setTimeout(function(){
                     let buy = 'buy'
                     let newwGarage = 'Nogarage'
 
+    let garagepo = document.querySelector('.garagee')
 
+   
 
     newGarage.addEventListener('click', function(){
         if(buy === 'buy'){
@@ -946,6 +959,40 @@ setTimeout(function(){
                 newGarage.style.background = 'url(img/button/3434.970.jpg)'
                 newGarage.style.backgroundSize = 'cover'
                 newwGarage = 'garage'
+                garagepo.style.background = 'url(img/garage/fadfce82daef92615329df2ea50e3fd3.jpg)'
+                garagepo.style.backgroundSize = '100% 100%'
+                massege = massege + 1
+                massagePer()
+              
+
+
+
+
+////////////////////////////////////
+
+achuvemant = achuvemant +1
+        claimQuetionSec.style.background = 'green'
+        claimQuetionSec.innerHTML = 'Claim'
+        claimQuetionSec.style.cursor = 'pointer'
+        per()
+        garageQuetion = 'noyes'
+
+        claimQuetionSec.addEventListener('click', function(){
+            if(garageQuetion === 'noyes'){
+                coin_valut.innerHTML =   +coin_valut.innerHTML + 20000
+                coin = coin + 20000
+                
+                 garageQuetion = 'noyesno'
+                claimQuetionSec.style.background = 'grey'
+                claimQuetionSec.innerHTML = 'Claimed'
+            }
+           
+           
+        })
+
+
+///////////////////////////////////
+
                 buy = 'lol'
                 
             }else{
@@ -1088,12 +1135,15 @@ newGarage.style.background = 'red'
                              
                              coin_valut.innerHTML = coin
                      })
- 
+                     achuvemant = achuvemant +1
                      newPendant.innerHTML = 'You bought it'
                      newPendant.style.background = 'url(img/button/3434.970.jpg)'
                      newPendant.style.backgroundSize = 'cover'
                      ropenda.style.background = 'url(img/endant.png)'
                      ropenda.style.backgroundSize = '100% 100%'
+                     massege = massege + 1
+                     massagePer()
+                     per()
                      buyyyyy = 'lol'
                      
                  }else{
@@ -1140,12 +1190,15 @@ newGarage.style.background = 'red'
                              
                              coin_valut.innerHTML = coin
                      })
- 
+                     per()
                      newturbine.innerHTML = 'You bought it'
                      newturbine.style.background = 'url(img/button/3434.970.jpg)'
                      newturbine.style.backgroundSize = 'cover'
                      turb.style.background = 'url(img/xturbo-kopiya.png.pagespeed.ic.f6PJOP2VlE.png)'
                      turb.style.backgroundSize = '100% 100%'
+                     achuvemant = achuvemant +1
+                     massege = massege + 1
+                     massagePer()
                      buyyyyyy = 'lol'
                      
                  }else{
@@ -1173,10 +1226,7 @@ newGarage.style.background = 'red'
              //////////////////
        
              let  masterPeopleSecond = document.querySelector('.master-clickerr')
-             
-             let  dymkuCoinSecond = document.querySelector('.coin-dymkuu')
-
-            let dymkuSecond = document.querySelector('.dymkuu')
+           
 
               let daleSecond = 'dale'
               let dozvilSecond = 'no'
@@ -1197,14 +1247,11 @@ let buySecondd = 'buy'
                
                 newmechanicSecond.innerHTML = 'Update mechanic 100000$ lv2'
                 masterPeopleSecond.style.display = 'flex'
-                // dymkuCoinSecond.style.display = 'flex'
-                // dymkuSecond.style.display = 'flex'
-                // dymkuCoinClaimSecond.style.display = 'flex'
-                
                 second_car.style.left = ' 56%'
                   domcratSecondCar.style.display = 'flex'
                   second_car.style.rotate = '-8deg'
                   second_car.style.top = ' 56%'
+
                 buySecondd = 'lol'
                 
                 daleSecond = 'dale'
@@ -1248,30 +1295,14 @@ let buySecondd = 'buy'
 
           
 
-        //   let  dymkuCoinClaimSecond =document.querySelector('.claim-dymku-coinn')
 
-        //   dymkuCoinClaimSecond.addEventListener('click', function(){
-            
-        //   coin_valut.innerHTML =  +dymkuCoinSecond.innerHTML + +coin_valut.innerHTML
-
-        //   dymkuCoinSecond.innerHTML = 0
-        //   coinnSecond = 0
-        //   })
-
-             /////////////////
          
-
-
-
 
              let buyyyyyyy = 'buyyyyyyy'
              let  masterPeople =document.querySelector('.master-clicker')
              let dozvil = 'no'
-             let  dymkuCoin =document.querySelector('.coin-dymku')
-             let coinMaster = document.querySelector('.coin-master')
-
-            let dymku = document.querySelector('.dymku')
-
+        
+            let mack = document.querySelector('.mechanicacc')
               let dale = 'dale'
                  let domcrat = document.querySelector('.domcrat')
              newmechanic.addEventListener('click', function(){
@@ -1286,18 +1317,17 @@ let buySecondd = 'buy'
                        
                         newmechanic.innerHTML = 'Update mechanic 35000$ lv2'
                         masterPeople.style.display = 'flex'
-                        // dymkuCoin.style.display = 'flex'
-                        // dymku.style.display = 'flex'
-                        // dymkuCoinClaim.style.display = 'flex'
-                        // coinMaster.style.display = 'flex'
-                        // bust.style.display = 'flex'
-                        
+                        per()
                       first_car.style.left = '56%'
                       first_car.style.rotate = '-10deg'
                       first_car.style.top = '50%'
                       domcrat.style.display = 'flex'
+                      mack.style.background = 'url(img/mechanick.webp)'
+                      mack.style.backgroundSize = '100% 100%'
+                      massege = massege + 1
+                      massagePer()
                         buyyyyyyy = 'lol'
-                        
+                        achuvemant = achuvemant +1
                         dale = 'dale'
                         dozvil = 'dozvil'
                         
@@ -1341,46 +1371,6 @@ let buySecondd = 'buy'
           setInterval(doz, 1000)
 
  
-        //   let  dymkuCoinClaim =document.querySelector('.claim-dymku-coin')
-
-        //   dymkuCoinClaim.addEventListener('click', function(){
-            
-        //  coin =  coinn + coin
-        //  coinn = 0
-        //   })
-
-        // let bust = document.querySelector('.bust')
-
-        // bust.addEventListener('click', function(){
-        //     let timeSec = 0
-        //     let dovolimotimo = 'yea'
-        //     function time(){
-        //         bust.innerHTML = timeSec
-                
-        //         timeSec = timeSec + 1 
-                
-             
-        //     }
-
-       
-        //     if(+bust.innerHTML === 10){
-                
-        //         console.log('a')
-        //     }
-
-        //     if(dovolimotimo === 'yea'){
-        //         setInterval(time, 10)   
-        //     }
-
-        
-            
-             
-            
-                
-        //         bust.style.backgroundColor = 'red'
-                
-                 
-        // })
 
         
 
@@ -1424,6 +1414,8 @@ let buySecondd = 'buy'
             MainClose.style.display = 'flex'
             second_slide.style.display = 'none'
             firs_upg.style.display = 'none'
+            second_upg.style.display = 'none'
+      
            
         })
 
@@ -1493,19 +1485,23 @@ let buySecondd = 'buy'
            
         })
 
+              let shopopenorclose = 1
 
         shopBtnn.addEventListener('click', function(){
-        
+         
+            if(shopopenorclose === 1 ){
+                shopBtnCheckk.checked = true
+                open = 'open'
+               
+                anime({
+                    targets: '.shopp',
+                    left: 0 ,
+                    duration: 500,
+                    easing: 'linear'
+                })
+            }
             
-            shopBtnCheckk.checked = true
-            open = 'open'
            
-            anime({
-                targets: '.shopp',
-                left: 0 ,
-                duration: 500,
-                easing: 'linear'
-            })
         
      
        
@@ -1543,10 +1539,162 @@ let suvenirConteinerClose = document.querySelector('.suvenir-conteiner-Close')
 
 suvenirConteinerBtn.addEventListener('click', function(){
     suvenirConteiner.style.display = 'flex'
+    massegeInner.style.display = 'none'
+    massege = 0
+
 })
         
 
 
 suvenirConteinerClose.addEventListener('click', function(){
     suvenirConteiner.style.display = 'none'
+})
+
+
+
+
+
+
+
+
+
+
+
+let fortuneBtnClose = document.querySelector('.fortune-conteiner-Close')
+let fortuneBtnOpen= document.querySelector('.fortune')
+let fortune= document.querySelector('.fortune-conteiner')
+
+
+fortuneBtnOpen.addEventListener('click', function(){
+    fortune.style.display = 'flex'
+})
+
+fortuneBtnClose.addEventListener('click', function(){
+    fortune.style.display = 'none'
+})
+
+
+
+
+
+
+let infConBeck = document.querySelector('.inf-hay-play-game-con')
+let lets= document.querySelector('.lets')
+let nextInf= document.querySelector('.inf-nex-inf')
+let tInfConteiner= document.querySelector('.photo-hav-play')
+
+let first = 1
+
+nextInf.addEventListener('click', function(){
+
+if(first === 1){
+    tInfConteiner.style.background = 'url(img/inf-ob/third.png)'
+    tInfConteiner.style.backgroundSize = '100% 100%'
+    first = 2
+}else{
+    if(first === 2){
+        tInfConteiner.style.background = 'url(img/inf-ob/second.png)'
+        tInfConteiner.style.backgroundSize = '100% 100%'
+        first = 3
+    }else{
+        if(first === 3){
+            tInfConteiner.style.background = 'url(img/inf-ob/four.png)'
+            tInfConteiner.style.backgroundSize = '100% 100%'
+            first = 4
+        }else{  
+              if(first === 4){
+                  tInfConteiner.style.background = 'url(img/inf-ob/last.png)'
+                  tInfConteiner.style.backgroundSize = '100% 100%'
+                  lets.innerHTML = 'Let`s play'
+                  first = 5
+              }else{
+                    if(first === 5){
+                    infConBeck.style.display = 'none'
+                    first = 6
+
+    
+ }
+ }
+  }
+ }
+}
+
+
+
+
+
+
+
+
+
+})
+
+
+let infbtnOpen = document.querySelector('.tooltip')
+
+infbtnOpen.addEventListener('click', function(){
+    infConBeck.style.display = 'flex'
+    first = 1
+    tInfConteiner.style.background = 'url(img/inf-ob/firs.png)'
+    tInfConteiner.style.backgroundSize = '100% 100%'
+    lets.innerHTML = 'Next'
+})
+
+
+let quetionsBtnOpen = document.querySelector('.quetionsqs')
+let quetions = document.querySelector('.quetions')
+let quetionsClose = document.querySelector('.quetions-conteiner-Close')
+
+quetionsBtnOpen.addEventListener('click', function(){
+    quetions.style.bottom = 0
+
+})
+
+quetionsClose.addEventListener('click', function(){
+    quetions.style.bottom = '-30%'
+    quetionsBtnOpen.checked = false
+})
+
+let claimQuetion = document.querySelector('.get-or-noFir')
+let claimQuetioncon = document.querySelector('.get-or-no')
+
+let claimQuetionSec = document.querySelector('.get-or-noThir')
+let claimQuetionThir = document.querySelector('.get-or-noSec')
+
+
+let achuvemant = 0
+
+let claimQuetiondoz = 'no'
+let lolo = 1
+
+function per(){
+    if(lolo === 1){
+        if(achuvemant === 3){
+            claimQuetioncon.style.background = 'green'
+            claimQuetioncon.innerHTML = 'Claim'
+            claimQuetioncon.style.cursor= 'pointer'
+    
+            claimQuetiondoz = 'yes'
+            lolo = 2
+            
+        }
+       
+            claimQuetion.innerHTML = achuvemant
+     
+    }
+   
+}
+
+
+
+claimQuetioncon.addEventListener('click', function(){
+    if(claimQuetiondoz === 'yes'){
+        claimQuetioncon.style.background = 'grey'
+        claimQuetioncon.innerHTML = 'Claimed'
+
+        coin = coin + 5000
+        coin_valut.innerHTML =   +coin_valut.innerHTML + 5000
+
+        claimQuetiondoz = 'no'
+    }
 })

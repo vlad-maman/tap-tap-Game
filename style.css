@@ -101,6 +101,7 @@ body{
   height: 60%;
   filter: drop-shadow(100px 100px 100px black);
   cursor: pointer;
+  z-index: 2;
   
 }
 
@@ -175,27 +176,27 @@ body{
   top: 70%;
   transform: translate(-50%,-50%);
   background:url(img/car/png-transparent-seat-128-antique-car-vintage-car-cropped-image-transparent-background.png) ;
-  background-size: 100%;
-  width: 700px;
-  height: 420px;
+  background-size: 100% 100%;
+  width: 45%;
+  height: 55%;
   filter: drop-shadow(100px 100px 100px black);
   cursor: pointer;
   z-index: 2;
 }
 
 .second-car:hover{
-  width: 696px;
-  height: 416px;
+  width: 45.6%;
+  height: 55.6%;
 }
 
 .second-car:active{
-  width: 700px;
-  height: 420px;
+  width: 45%;
+  height: 55%;
 }
 
 .first-car:hover{
-  width: 39.6%;
-  height: 59.5%;
+  width: 40.4%;
+  height: 60.5%;
 }
 
 .first-car:active{
@@ -358,7 +359,7 @@ background-color: rgba(0,0,0,0.6);
   z-index: 2;
   height: fit-content;
   position: absolute;
-  margin-right: -1240px;
+  margin-right: -82%;
 
   border-radius: 20px;
   overflow: hidden;
@@ -381,8 +382,8 @@ background-color: rgba(0,0,0,0.6);
 
 .master-clicker{
   display: none;
-  width: 400px;
-  height: 500px;
+  width: 25%;
+  height: 70%;
   position: absolute;
   left: 2% ;
   bottom: 8%;
@@ -683,7 +684,7 @@ top: 6%;
   position: absolute;
   font-style: italic;
   color: rgb(50, 3, 3);
- left: 100%;
+ right: -10%;
  top: -20%;
  z-index: 1;
   transition:  all 1s;
@@ -691,13 +692,15 @@ top: 6%;
   
 }
 
+
+
 .wellcom-text-2{
   top: 38%;
   font-weight: 600;
-  font-size: 55px;
+  font-size: 47px;
   position: absolute;
- left: 100%;
- top: 120%;
+right: -1%;
+ top: 100%;
  z-index: 1;
   width: max-content;
 color: rgb(54, 3, 3) ;
@@ -711,7 +714,7 @@ color: rgb(54, 3, 3) ;
 
   100%{
   
-    left: 66%;
+    right: 8%;
     top: 37%;
     
   }
@@ -721,10 +724,10 @@ color: rgb(54, 3, 3) ;
 
 @keyframes Hell0 {
 0%{
-  left: 100%;
+
 }
 100%{
-  left: 60%;
+  right: 15%;
   top: 20%;
  
 }
@@ -797,7 +800,7 @@ scale: 1;
   width: 100%;
   height: 100%;
   background: url(img/smoke.png);
-  background: cover;
+  background-size: 100% 100%;
   z-index: 2;
   position: absolute;
   top: 100%;
@@ -921,9 +924,9 @@ position: absolute;
 
 .photo-game{
   width: 35%;
-  height: 350px;
+  height: 80%;
   background: url(img/photo-game.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
   position: absolute;
   left: 5%;
   top: 50%;
@@ -933,9 +936,10 @@ position: absolute;
 .Logo-Name{
   display: inline-block;
   position: relative;
-  top: -8%;
+  height: max-content;
+  top: -5%;
   left: 7%;
-  font-size: 50px;
+  font-size:300%;
   color: rgb(169, 106, 106);
   z-index: 2;
   font-weight: 900;
@@ -945,10 +949,11 @@ position: absolute;
 .how-play{
   display: inline-block;
   position: absolute;
-  top: 14%;
+  top: 17%;
   left: 7%;
-  font-size: 30px;
-  width: 60%;
+  font-size: 1.9em;
+
+  max-width: 70%;
   color: rgb(163, 141, 141);
   z-index: 2;
   font-style: italic;
@@ -961,7 +966,7 @@ position: absolute;
   margin-left: 1%;
   width: 50%;
   background-color: rgba(69, 20, 20, 0.4);
-  height: 80% ;
+  height: 90% ;
   position: absolute;
   top: 50%;
   left: 45%;
@@ -1499,10 +1504,11 @@ section {
 .domcrat{
   display: none;
   position: absolute;
-  right: 15%;
+  right: 17%;
   bottom: 8%;
-  width: 300px;
-  height: 190px;
+  width: 20%;
+  height: 25%;
+  z-index: 0;
 }
 
 .domcratt{
@@ -1510,13 +1516,13 @@ section {
   position: absolute;
   right: 15%;
   bottom: 5%;
-  width: 300px;
-  height: 190px;
-  z-index: 1;
+  width: 20%;
+  height: 25%;
+  z-index: 0;
 }
 
 .acs{
-  width: 80%;
+  width: 100%;
   height: 100%;
   filter: drop-shadow(7px 6px 10px orange);
 margin: 0;
@@ -1526,8 +1532,8 @@ margin: 0;
 }
 
 .suvenir-conteiner-btn{
-  width: 29px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   transition: all 200ms;
   cursor: pointer;
   
@@ -1549,6 +1555,7 @@ scale:0.9;
     justify-content: center;
    
     flex-wrap: wrap;
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -1573,11 +1580,11 @@ scale:0.9;
   font-weight: 500;
   margin: 5%;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  flex-wrap: wrap;
+
   padding: 0;
 }
 
-.suvenir-conteiner-Close{
+.suvenir-conteiner-Close, .fortune-conteiner-Close  {
   width: 70px;
   height: 70px;
   position: absolute;
@@ -1585,4 +1592,172 @@ scale:0.9;
   top: 5%;
   cursor: pointer;
   filter: drop-shadow(5px 5px 8px black);
+}
+
+.quetions-conteiner-Close{
+  display: flex;
+ 
+  align-items: center;
+  justify-content: center;
+ 
+  font-size: 25px;
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  background: red;
+color: rgb(0, 0, 0);
+font-weight: 1000;
+
+
+}
+
+
+.first-car-con{
+  width: max-content;
+  height: max-content;
+  display: flex;
+}
+
+
+.massage{
+ 
+  display: none;
+  background-color: red;
+  border-radius: 100%;
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 1000;
+  padding: 0.5px 4px 0.5px 4px;
+  position: relative;
+  right: 35%;
+  top: -26.5px;
+  text-align: center;
+}
+
+.fortune{
+  display: none;
+  width: 50px ;
+   height: 40px;
+    position: absolute;
+     left: 5%;
+     transition: all 0.2s;
+     cursor: pointer;
+}
+
+.fortune:hover{
+scale: 0.9;
+}
+
+.fortune:active{
+  scale: 1;
+}
+
+.fortune-conteiner{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgb(0, 0, 0, .7);
+}
+
+.inf-hay-play-game-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 4;
+}
+
+.inf-hay-play-game-con-small{
+  width: 60%;
+  height: 75%;
+  background-color: #1e1e1e;
+}
+
+.inf-nex-inf{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  position: relative;
+  text-align: center;
+  background-color: red;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: 10%;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow:0px -10px 30px rgb(60, 2, 2);
+}
+
+.inf-nex-inf:hover{
+  background-color: rgb(156, 2, 2);
+}
+
+.inf-nex-inf:active{
+  background-color: rgb(114, 14, 14);
+}
+
+.go-go-go{
+  position: absolute;
+  left: 90%;
+}
+
+.photo-hav-play{
+  height: 100%;
+  width: 100%;
+  background: url(img/inf-ob/firs.png);
+  background-size: 100% 100%;
+}
+
+.quetions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 23%;
+  background: url(img/1674829332_bogatyr-club-p-serii-fon-dlya-prezentatsii-fon-2.jpg);
+  background-size: 100% 100%;
+  z-index: 3;
+  position: absolute;
+  bottom: -30%;
+  left: 0;
+  transition: all 0.7s;
+  
+}
+
+.quetions-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+  height: 60%;
+  background: linear-gradient(rgb(255, 0, 0),
+                              rgb(101, 12, 12),
+                              black);
+  margin: 10px;
+
+}
+
+.qutions-task{
+  font-size: 30px;
+  font-weight: 800;
+  color: #ffffff;
+  
+}
+
+
+
+.get-or-no{
+  background-color: red;
+
+ 
 }
