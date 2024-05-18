@@ -10,6 +10,9 @@ body{
  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+body::-webkit-scrollbar{
+  width: 0;
+}
 
 
 
@@ -482,7 +485,7 @@ header{
   left: 0;
   width: 100%;
   height: 10vh;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(67, 20, 20, 0.8);
   z-index: 2;
 }
 
@@ -674,7 +677,7 @@ header{
 position: absolute;
 left: 2%;
 top: 6%;
-  width: 90px;
+  width: 80px;
   height: 65px;
 }
 
@@ -1296,7 +1299,7 @@ flex-wrap: wrap;
 .demo {
   opacity: 0.6;
  position: relative;
- 
+
 }
 
 .active,
@@ -1313,6 +1316,7 @@ flex-wrap: wrap;
   display: inline-block;
   cursor: pointer;
   font-family: "Arial", sans-serif;
+  z-index: 2;
 
 }
 
@@ -1514,10 +1518,10 @@ section {
 .domcratt{
   display: none;
   position: absolute;
-  right: 15%;
-  bottom: 5%;
+  right: 16%;
+  bottom: 3%;
   width: 20%;
-  height: 25%;
+  height: 30%;
   z-index: 0;
 }
 
@@ -1587,7 +1591,7 @@ scale:0.9;
 .suvenir-conteiner-Close, .fortune-conteiner-Close  {
   width: 70px;
   height: 70px;
-  position: absolute;
+  position: fixed;
   right: 3%;
   top: 5%;
   cursor: pointer;
@@ -1699,10 +1703,12 @@ scale: 0.9;
 
 .inf-nex-inf:hover{
   background-color: rgb(156, 2, 2);
+  color: rgb(43, 43, 43);
 }
 
 .inf-nex-inf:active{
   background-color: rgb(114, 14, 14);
+  color: rgb(255, 255, 255);
 }
 
 .go-go-go{
@@ -1760,4 +1766,541 @@ scale: 0.9;
   background-color: red;
 
  
+}
+
+.what-suvenir-con{
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline;
+  color:  rgb(183, 181, 181) ;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.con-small-suvenirSec{
+  display: none;
+}
+
+.con-small-suvenirFir{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.next-Acivements{
+  display: flex;
+  position: fixed;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  width: 7%;
+  height: 8%;
+  background: url(img/ykazatel.png);
+  background-size: 100% 100%;
+  transform: rotate(180deg);
+}
+
+.next-Acivements:hover{
+  width: 6.8%;
+  height: 7.8%;
+}
+
+.next-Acivements:active{
+  width: 7%;
+  height: 8%;
+}
+
+.suvenir-conteinerSecond{
+  display:none;
+}
+
+.next-AcivementsSecond{
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  width: 7%;
+  height: 8%;
+  background: url(img/ykazatel.png);
+  background-size: 100% 100%;
+
+}
+
+.next-AcivementsSecond:hover{
+  width: 6.8%;
+  height: 7.8%;
+}
+
+.next-AcivementsSecond:active{
+  width: 7%;
+  height: 8%;
+}
+
+
+
+
+.leader-board{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+  width: 100%;
+  height: 100vh;
+  animation: leader-back 4s ease-in-out  infinite ;
+}
+
+@keyframes leader-back {
+  0%{
+    background:rgb(77, 38, 38);
+  }
+  25%{
+    background: rgb(35, 14, 14);
+  }
+  50%{
+    background: rgb(49, 17, 17);
+  }
+  75%{
+    background: rgb(46, 17, 17);
+  }
+  100%{
+    background:rgb(77, 38, 38);
+  }
+}
+
+.leaderboard-conteiner{
+  width: 60%;
+  height: 80%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:linear-gradient(rgb(93, 60, 60),rgb(74, 42, 42), rgb(56, 9, 9)) ;
+  border-radius: 20px;
+  box-shadow: 15px 15px 30px rgb(54, 28, 28),  -15px -15px 30px rgb(62, 17, 17);
+  overflow-y: scroll;
+  overflow-x:hidden;
+}
+
+.name-leaderboard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  width: 100%;
+  font-weight: 900;
+  height: 10%;
+  position:sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background:linear-gradient(rgb(57, 20, 20),rgb(10, 5, 5)) ;
+  color: white;
+  font-size: 40px;
+
+}
+
+.people-leader{
+  width: 105%;
+  height: 15%;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+box-shadow: 5px 3px 8px black ;
+  transition: all .5s;
+  overflow-x: visible;
+  cursor: pointer;
+}
+
+.people-leader:hover{
+  scale: 1.04;
+  transform:translateY(-5px);
+  z-index: 3;
+}
+
+.numeration{
+  display: inline-block;
+  position: relative;
+  left: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 30px;
+  border-radius:15px;
+  background-color: #0c0f14;
+  text-align: center;
+  color: white;
+}
+
+.numeration > p{
+  position: relative;
+  top: -30%;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 1000;
+ 
+}
+
+.logo-leader{
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #201f1f;
+  border-radius: 100%;
+  background-size: 100% 100%;
+}
+
+.name-leader{
+  max-width:10% ;
+  height: 5%;
+  font-size: 20px;
+  font-weight: 800;
+  position: absolute;
+  left: 28%;
+  top: 35%;
+
+  color: white;
+}
+
+
+.money-leader{
+  width: 15%;
+  height: max-content;
+  font-size: 25px;
+  position: absolute;
+  right: 6%;
+  top: 35%;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+
+.leaderboard-conteiner::-webkit-scrollbar{
+  background-color: #1f1c1c;
+
+  border-radius:50px ;
+ 
+
+}
+
+.leaderboard-conteiner::-webkit-scrollbar-thumb{
+  background-color: #975d6b;
+  border-radius: 18px;
+
+ 
+}
+
+.fir-peo{
+  background-color: rgb(162, 138, 4);
+}
+.sec-peo{
+  background-color: rgb(153, 151, 151);
+}
+.thirf-peo{
+  background-color: rgb(117, 42, 42);
+}
+
+
+
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.resume {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+
+.resume .resume_left {
+  width: 280px;
+  background: #0bb5f4;
+}
+
+.resume .resume_left .resume_profile {
+  width: 100%;
+  height: 280px;
+}
+
+.resume .resume_left .resume_profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.resume .resume_left .resume_content {
+  padding: 0 25px;
+}
+
+.resume .title {
+  margin-bottom: 20px;
+}
+
+.resume .resume_left .bold {
+  color: #fff;
+}
+
+.resume .resume_left .regular {
+  color: #b1eaff;
+}
+
+.resume .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #b1eaff;
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume .resume_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume .resume_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data {
+  color: #b1eaff;
+}
+
+.resume .resume_left .resume_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #b1eaff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #009fd9;
+  position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_per {
+  width: 15%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume .resume_left .resume_social .semi-bold {
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.resume .resume_right {
+  width: 520px;
+  background: #fff;
+  padding: 25px;
+}
+
+.resume .resume_right .bold {
+  color: #0bb5f4;
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume .resume_right ul li {
+  position: relative;
+}
+
+.resume .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #0bb5f4;
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 115px;
+  background: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #0bb5f4;
+  border-radius: 50%;
+  position: relative;
+  color: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+  font-size: 30px;
+}
+
+.resume .resume_right .resume_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul li:last-child:before {
+  display: none;
+}
+.dev{
+  width: 100%;
+  height: max-content;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  z-index: 3;
+  display: none;
+  background: linear-gradient(rgb(72, 30, 30), rgb(57, 30, 30), rgb(17, 17, 17));
+}
+
+.NextDev, .BackDev{
+ 
+ 
+ width: 70px;
+ height: 50px;
+ background: url(img/ykazatel.png);
+ background-size: 100% 100%;
+ border: none;
+ transition: all .2s;
+ z-index: 4;
+}
+
+.NextDev{
+  position: fixed;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(180deg);
+}
+
+.BackDev{
+  display: none;
+  position: fixed;
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.NextDev:hover, .BackDev:hover{
+  scale: 0.9;
+}
+
+.NextDev:active, .BackDev:active{
+  scale: 1;
+}
+
+.sec-dev, .third-dev, .four-dev{
+  display: none;
+  background-color: #009fd9;
+}
+
+.skip{
+  width: 100%;
+  height: 3%;
+  background: #036a90;
+  border: none;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.skip:hover{
+  background: #034e69;
+  color: rgb(118, 118, 118);
+}
+
+.skip:active{
+  background: #023d52;
+  color: rgb(255, 255, 255);
 }

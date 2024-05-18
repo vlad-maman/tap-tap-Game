@@ -46,9 +46,9 @@ coin_valut.innerHTML = coin
 document.querySelector('.coin').innerHTML =  document.querySelector('.coin').innerHTML
 
 
-let coin = 0
+let coin = 40000000
 
-let coinqua = coin
+
 
 let massege = 0
 let massegeInner = document.querySelector('.massage')
@@ -110,21 +110,7 @@ if(buySeconddd === 'buy'){
           
               
           }else{
-            
-             coin_valut.style.color = 'red'
-      coin_valut.style.scale = '1.2'
-      setTimeout(function(){
-          coin_valut.style.color = 'gold'
-          coin_valut.style.scale = '1'
-      },500)
-      setTimeout(function(){
-          coin_valut.style.color = 'red'
-          coin_valut.style.scale = '1.2'
-      },1000)
-      setTimeout(function(){
-          coin_valut.style.color = 'gold'
-          coin_valut.style.scale = '1'
-      },1500)
+            IfDontHaveMoney()
       
     }
         }
@@ -169,21 +155,7 @@ if(buySeconddd === 'buy'){
                     buyyyyyyyyyy = 'lol'
                     
                 }else{
-                  
-                   coin_valut.style.color = 'red'
-            coin_valut.style.scale = '1.2'
-            setTimeout(function(){
-                coin_valut.style.color = 'gold'
-                coin_valut.style.scale = '1'
-            },500)
-            setTimeout(function(){
-                coin_valut.style.color = 'red'
-                coin_valut.style.scale = '1.2'
-            },1000)
-            setTimeout(function(){
-                coin_valut.style.color = 'gold'
-                coin_valut.style.scale = '1'
-            },1500)
+                    IfDontHaveMoney()
             
           }
               }
@@ -228,20 +200,7 @@ if(buySeconddd === 'buy'){
                     
                 }else{
                   
-                   coin_valut.style.color = 'red'
-            coin_valut.style.scale = '1.2'
-            setTimeout(function(){
-                coin_valut.style.color = 'gold'
-                coin_valut.style.scale = '1'
-            },500)
-            setTimeout(function(){
-                coin_valut.style.color = 'red'
-                coin_valut.style.scale = '1.2'
-            },1000)
-            setTimeout(function(){
-                coin_valut.style.color = 'gold'
-                coin_valut.style.scale = '1'
-            },1500)
+                    IfDontHaveMoney()
             
           }
               }
@@ -286,20 +245,7 @@ if(buySeconddd === 'buy'){
               
           }else{
             
-             coin_valut.style.color = 'red'
-      coin_valut.style.scale = '1.2'
-      setTimeout(function(){
-          coin_valut.style.color = 'gold'
-          coin_valut.style.scale = '1'
-      },500)
-      setTimeout(function(){
-          coin_valut.style.color = 'red'
-          coin_valut.style.scale = '1.2'
-      },1000)
-      setTimeout(function(){
-          coin_valut.style.color = 'gold'
-          coin_valut.style.scale = '1'
-      },1500)
+            IfDontHaveMoney()
       
     }
         }
@@ -347,21 +293,7 @@ if(buySeconddd === 'buy'){
                       dozvill = 'dozvill'
                       
                   }else{
-                    
-                     coin_valut.style.color = 'red'
-              coin_valut.style.scale = '1.2'
-              setTimeout(function(){
-                  coin_valut.style.color = 'gold'
-                  coin_valut.style.scale = '1'
-              },500)
-              setTimeout(function(){
-                  coin_valut.style.color = 'red'
-                  coin_valut.style.scale = '1.2'
-              },1000)
-              setTimeout(function(){
-                  coin_valut.style.color = 'gold'
-                  coin_valut.style.scale = '1'
-              },1500)
+                    IfDontHaveMoney()
               
             }
                 }
@@ -378,9 +310,9 @@ if(buySeconddd === 'buy'){
      
     )
     //////////////////
-
+let machsec = 0
 let buySecond ='buy'
-  
+let quetionsqsTWOtwoo = document.querySelector('.get-or-noThirTWO')
     newmechanicSecond.addEventListener('click', function(){
      
 
@@ -401,6 +333,29 @@ let buySecond ='buy'
    
                   newmechanicSecond.innerHTML = 'Update mechanic 150000$ lv3'
 
+                  ///////////////////////////////
+                  quetionsqsTWOtwoo.style.background = 'green'
+                  quetionsqsTWOtwoo.innerHTML = 'Claim'
+                  quetionsqsTWOtwoo.style.cursor = 'pointer'
+                  per()
+                  let garageQuetionn = 'noyes'
+          
+                  quetionsqsTWOtwoo.addEventListener('click', function(){
+                      if(garageQuetionn === 'noyes'){
+                          coin_valut.innerHTML =   +coin_valut.innerHTML + 100000
+                          coin = coin + 100000
+                          
+                           garageQuetionn = 'noyesno'
+                           quetionsqsTWOtwoo.style.background = 'grey'
+                           quetionsqsTWOtwoo.innerHTML = 'Claimed'
+                      }
+                     
+                     
+                  })
+
+
+                  //////////////////////////////////
+
 
    
                   dozvilSecond = 'dozvill'
@@ -409,20 +364,7 @@ let buySecond ='buy'
                   buySecond ='lol'
               }else{
                 
-                 coin_valut.style.color = 'red'
-          coin_valut.style.scale = '1.2'
-          setTimeout(function(){
-              coin_valut.style.color = 'gold'
-              coin_valut.style.scale = '1'
-          },500)
-          setTimeout(function(){
-              coin_valut.style.color = 'red'
-              coin_valut.style.scale = '1.2'
-          },1000)
-          setTimeout(function(){
-              coin_valut.style.color = 'gold'
-              coin_valut.style.scale = '1'
-          },1500)
+                IfDontHaveMoney()
           
         }
             }
@@ -444,26 +386,31 @@ let buySecond ='buy'
     //////////////////
   
 
-
+    let header = document.querySelector('header')
     
 Start.addEventListener('click', function(){
     first_slide.style.display = 'none'
     second_slide.style.display = 'flex'
     firs_upg.style.display = 'flex'
+    header.style.display = 'none'
  
 })
 
 
-
+let quetionsTWO = 'one'
 
 
 fir.addEventListener('click', function(){
+     quetionsTWO = 'one'
     firs_upg.style.display = 'flex'
     second_upg.style.display = 'none'
+    quetionsBtnOpenSEC.checked = false
+    quetionsSEC.style.bottom = '-30%'
    
 })
 
 
+let quetionsqsTWO = document.querySelector('.get-or-noSecTWO')
 
 
 
@@ -477,7 +424,7 @@ let newturbine = document.querySelector('.turbine')
 ///////////////////////////////////////
 let buySeconddddd ='buy'
 let newMotorSecond = document.querySelector('.motorr')
-
+let newMotorSecondSUv = document.querySelector('.motorrr-two')
 newMotorSecond.addEventListener('click', function(){
 
 
@@ -496,29 +443,20 @@ newMotorSecond.addEventListener('click', function(){
                     
                     coin_valut.innerHTML = coin
             })
-    
+            achuvemant = achuvemant +1
+            massege = massege + 1
             newMotorSecond.innerHTML = 'You bought it'
             newMotorSecond.style.background = 'url(img/button/3434.970.jpg)'
             newMotorSecond.style.backgroundSize = 'cover'
-    
+            newMotorSecondSUv.style.background = 'url(img/sec/Engine.png)'
+            newMotorSecondSUv.style.backgroundSize = '100% 100%'
+            massagePer()
+            per()
             buySeconddddd  ='lol'
             
         }else{
           
-           coin_valut.style.color = 'red'
-    coin_valut.style.scale = '1.2'
-    setTimeout(function(){
-        coin_valut.style.color = 'gold'
-        coin_valut.style.scale = '1'
-    },500)
-    setTimeout(function(){
-        coin_valut.style.color = 'red'
-        coin_valut.style.scale = '1.2'
-    },1000)
-    setTimeout(function(){
-        coin_valut.style.color = 'gold'
-        coin_valut.style.scale = '1'
-    },1500)
+            IfDontHaveMoney()
         }
     }
 
@@ -531,6 +469,7 @@ newMotorSecond.addEventListener('click', function(){
 
 let newWheelsSecond = document.querySelector('.wheelss')
 let buySecondddddd ='buy'
+let newWheelsSecondSuv = document.querySelector('.wheelsac-two')
 newWheelsSecond.addEventListener('click', function(){
 
 if(buySecondddddd === 'buy'){
@@ -548,29 +487,21 @@ if(buySecondddddd === 'buy'){
                 
                 coin_valut.innerHTML = coin
         })
-
+        achuvemant = achuvemant +1
+        massege = massege + 1
         newWheelsSecond.innerHTML = 'You bought it'
         newWheelsSecond.style.background = 'url(img/button/3434.970.jpg)'
         newWheelsSecond.style.backgroundSize = 'cover'
+        newWheelsSecondSuv.style.background = 'url(img/sec/asanti-ab050bd-mogul-6-26x10-6-et30-gloss-black-w-machined-face-a1-png.webp)'
+        per()
+        massagePer()
+        newWheelsSecondSuv.style.backgroundSize = '100% 100%'
         buySecondddddd ='lol'
         
         
     }else{
       
-       coin_valut.style.color = 'red'
-coin_valut.style.scale = '1.2'
-setTimeout(function(){
-    coin_valut.style.color = 'gold'
-    coin_valut.style.scale = '1'
-},500)
-setTimeout(function(){
-    coin_valut.style.color = 'red'
-    coin_valut.style.scale = '1.2'
-},1000)
-setTimeout(function(){
-    coin_valut.style.color = 'gold'
-    coin_valut.style.scale = '1'
-},1500)
+        IfDontHaveMoney()
     }
 }
 
@@ -584,7 +515,7 @@ setTimeout(function(){
 
 
 let newSuvenirsSecond = document.querySelector('.suvenirss')
-
+let newSuvenirsSecondSuv = document.querySelector('.ronaldo-two')
 let buySeconddddddd = 'buy'
 newSuvenirsSecond.addEventListener('click', function(){
 
@@ -604,29 +535,20 @@ if(buySeconddddddd === 'buy'){
                 
                 coin_valut.innerHTML = coin
         })
-
+        achuvemant = achuvemant +1
+        massege = massege + 1
         newSuvenirsSecond.innerHTML = 'You bought it'
         newSuvenirsSecond.style.background = 'url(img/button/3434.970.jpg)'
         newSuvenirsSecond.style.backgroundSize = 'cover'
-
+        newSuvenirsSecondSuv.style.background = 'url(img/sec/824.png)'
+        newSuvenirsSecondSuv.style.backgroundSize = '100% 100%'
+        massagePer()
+        per()
         buySeconddddddd = 'lol'
         
     }else{
       
-       coin_valut.style.color = 'red'
-coin_valut.style.scale = '1.2'
-setTimeout(function(){
-    coin_valut.style.color = 'gold'
-    coin_valut.style.scale = '1'
-},500)
-setTimeout(function(){
-    coin_valut.style.color = 'red'
-    coin_valut.style.scale = '1.2'
-},1000)
-setTimeout(function(){
-    coin_valut.style.color = 'gold'
-    coin_valut.style.scale = '1'
-},1500)
+        IfDontHaveMoney()
     }
 
 }
@@ -641,6 +563,7 @@ setTimeout(function(){
 
 let newPendantSecond = document.querySelector('.pendantt')
 let buySecondddddddd = 'buy'
+let newPendantSecondSuv = document.querySelector('.pendan-two')
 newPendantSecond.addEventListener('click', function(){
 
 
@@ -659,29 +582,40 @@ if(buySecondddddddd === 'buy'){
                 
                 coin_valut.innerHTML = coin
         })
+        /////////////////////////////////
+        quetionsqsTWO.style.background = 'green'
+        quetionsqsTWO.innerHTML = 'Claim'
+        quetionsqsTWO.style.cursor = 'pointer'
+        per()
+        let ggarageQuetion = 'noyes'
 
+        quetionsqsTWO.addEventListener('click', function(){
+            if(ggarageQuetion === 'noyes'){
+                coin_valut.innerHTML =   +coin_valut.innerHTML + 15000
+                coin = coin + 15000
+                
+                 ggarageQuetion = 'noyesno00'
+                 quetionsqsTWO.style.background = 'grey'
+                 quetionsqsTWO.innerHTML = 'Claimed'
+            }
+           
+           
+        })
+        ////////////////////////////////
+        achuvemant = achuvemant +1
+        massege = massege + 1
         newPendantSecond.innerHTML = 'You bought it'
         newPendantSecond.style.background = 'url(img/button/3434.970.jpg)'
         newPendantSecond.style.backgroundSize = 'cover'
-
+        newPendantSecondSuv.style.background = 'url(img/sec/12a8bfebf261846e21406023edab5d557.png)'
+        newPendantSecondSuv.style.backgroundSize = '100% 100%'
+        massagePer()
+        per()
         buySecondddddddd = 'lol'
         
     }else{
       
-       coin_valut.style.color = 'red'
-coin_valut.style.scale = '1.2'
-setTimeout(function(){
-    coin_valut.style.color = 'gold'
-    coin_valut.style.scale = '1'
-},500)
-setTimeout(function(){
-    coin_valut.style.color = 'red'
-    coin_valut.style.scale = '1.2'
-},1000)
-setTimeout(function(){
-    coin_valut.style.color = 'gold'
-    coin_valut.style.scale = '1'
-},1500)
+        IfDontHaveMoney()
     }
 }
 
@@ -695,6 +629,7 @@ setTimeout(function(){
 
 let newturbineSecond = document.querySelector('.turbinee')
 let buySeconddddddddd = 'buy'
+let newturbineSecondSuv = document.querySelector('.turb-two')
 newturbineSecond.addEventListener('click', function(){
 
 
@@ -713,29 +648,20 @@ if(buySeconddddddddd === 'buy'){
                 
                 coin_valut.innerHTML = coin
         })
-
+        achuvemant = achuvemant +1
+        massege = massege + 1
         newturbineSecond.innerHTML = 'You bought it'
         newturbineSecond.style.background = 'url(img/button/3434.970.jpg)'
         newturbineSecond.style.backgroundSize = 'cover'
-
+        newturbineSecondSuv.style.background = 'url(img/sec/xturbo-kopiya.png.pagespeed.ic.f6PJOP2V.png)'
+        newturbineSecondSuv.style.backgroundSize = '100% 100%'
+        massagePer()
+        per()
         buySeconddddddddd = 'lol'
         
     }else{
       
-       coin_valut.style.color = 'red'
-coin_valut.style.scale = '1.2'
-setTimeout(function(){
-    coin_valut.style.color = 'gold'
-    coin_valut.style.scale = '1'
-},500)
-setTimeout(function(){
-    coin_valut.style.color = 'red'
-    coin_valut.style.scale = '1.2'
-},1000)
-setTimeout(function(){
-    coin_valut.style.color = 'gold'
-    coin_valut.style.scale = '1'
-},1500)
+        IfDontHaveMoney()
     }
 
 }
@@ -754,7 +680,7 @@ setTimeout(function(){
 
 
 
-
+///////////////////////////////////////////////////////////////first
         let buyy = 'buyy'
         let motorpo = document.querySelector('.motorrr')
         newMotor.addEventListener('click', function(){
@@ -783,20 +709,7 @@ setTimeout(function(){
                     
                 }else{
                    
-                    coin_valut.style.color = 'red'
-                    coin_valut.style.scale = '1.2'
-                    setTimeout(function(){
-                        coin_valut.style.color = 'gold'
-                        coin_valut.style.scale = '1'
-                    },500)
-                    setTimeout(function(){
-                        coin_valut.style.color = 'red'
-                        coin_valut.style.scale = '1.2'
-                    },1000)
-                    setTimeout(function(){
-                        coin_valut.style.color = 'gold'
-                        coin_valut.style.scale = '1'
-                    },1500)
+                    IfDontHaveMoney()
                 }
            
             
@@ -829,27 +742,14 @@ setTimeout(function(){
                         
                     }else{
                       
-                        coin_valut.style.color = 'red'
-                        coin_valut.style.scale = '1.2'
-                        setTimeout(function(){
-                            coin_valut.style.color = 'gold'
-                            coin_valut.style.scale = '1'
-                        },500)
-                        setTimeout(function(){
-                            coin_valut.style.color = 'red'
-                            coin_valut.style.scale = '1.2'
-                        },1000)
-                        setTimeout(function(){
-                            coin_valut.style.color = 'gold'
-                            coin_valut.style.scale = '1'
-                        },1500)
+                        IfDontHaveMoney()
                     }
                
                 
                 }})
 
 
-
+             
 
                 let buyyyy = 'buyyyy'
                 let wheelsac = document.querySelector('.wheelsac')
@@ -870,7 +770,7 @@ setTimeout(function(){
                             newWheels.innerHTML = 'You bought it'
                             newWheels.style.background = 'url(img/button/3434.970.jpg)'
                             newWheels.style.backgroundSize = 'cover'
-                            wheelsac.style.background = 'url(img/asanti-ab050bd-mogul-6-26x10-6-et30-gloss-black-w-machined-face-a1-png.webp)'
+                            wheelsac.style.background = 'url(img/col.png)'
                             wheelsac.style.backgroundSize = '100% 100%'
                             massege = massege + 1
                             massagePer()
@@ -919,21 +819,7 @@ setTimeout(function(){
                             buyyyy = 'lol'
                             
                         }else{
-                          
-                           coin_valut.style.color = 'red'
-                    coin_valut.style.scale = '1.2'
-                    setTimeout(function(){
-                        coin_valut.style.color = 'gold'
-                        coin_valut.style.scale = '1'
-                    },500)
-                    setTimeout(function(){
-                        coin_valut.style.color = 'red'
-                        coin_valut.style.scale = '1.2'
-                    },1000)
-                    setTimeout(function(){
-                        coin_valut.style.color = 'gold'
-                        coin_valut.style.scale = '1'
-                    },1500)
+                            IfDontHaveMoney()
                         }
                    
                     
@@ -954,14 +840,16 @@ setTimeout(function(){
             if(coin_valut.innerHTML >= 50000){
                 coin = coin - 50000
                 coin_valut.innerHTML = coin
-            
+                massege = massege + 1
+                achuvemant = achuvemant +1
+                suvenirConteinerSecondOpeNOOPEN = 'yes'
                 newGarage.innerHTML = 'You bought it'
                 newGarage.style.background = 'url(img/button/3434.970.jpg)'
                 newGarage.style.backgroundSize = 'cover'
                 newwGarage = 'garage'
                 garagepo.style.background = 'url(img/garage/fadfce82daef92615329df2ea50e3fd3.jpg)'
                 garagepo.style.backgroundSize = '100% 100%'
-                massege = massege + 1
+                
                 massagePer()
               
 
@@ -970,7 +858,7 @@ setTimeout(function(){
 
 ////////////////////////////////////
 
-achuvemant = achuvemant +1
+
         claimQuetionSec.style.background = 'green'
         claimQuetionSec.innerHTML = 'Claim'
         claimQuetionSec.style.cursor = 'pointer'
@@ -997,20 +885,7 @@ achuvemant = achuvemant +1
                 
             }else{
               
-                coin_valut.style.color = 'red'
-                coin_valut.style.scale = '1.2'
-                setTimeout(function(){
-                    coin_valut.style.color = 'gold'
-                    coin_valut.style.scale = '1'
-                },500)
-                setTimeout(function(){
-                    coin_valut.style.color = 'red'
-                    coin_valut.style.scale = '1.2'
-                },1000)
-                setTimeout(function(){
-                    coin_valut.style.color = 'gold'
-                    coin_valut.style.scale = '1'
-                },1500)
+                IfDontHaveMoney()
             }
        
         
@@ -1023,11 +898,16 @@ achuvemant = achuvemant +1
         sec.addEventListener('click', function(){
 
             if(newwGarage === 'garage'){
-
+ 
                 firs_upg.style.display = 'none'
                 second_upg.style.display = 'flex'
-                shop.display = 'none'
+                shop.style.left = '-40%'
+                quetions.style.bottom = '-40%'
                 shopBtnCheckk.checked = false
+                quetionsBtnOpen.checked = false
+                quetionsTWO = 'TWO'
+           
+       
 
                 anime({
                     targets: '.shop',
@@ -1148,20 +1028,7 @@ newGarage.style.background = 'red'
                      
                  }else{
                    
-                    coin_valut.style.color = 'red'
-             coin_valut.style.scale = '1.2'
-             setTimeout(function(){
-                 coin_valut.style.color = 'gold'
-                 coin_valut.style.scale = '1'
-             },500)
-             setTimeout(function(){
-                 coin_valut.style.color = 'red'
-                 coin_valut.style.scale = '1.2'
-             },1000)
-             setTimeout(function(){
-                 coin_valut.style.color = 'gold'
-                 coin_valut.style.scale = '1'
-             },1500)
+                    IfDontHaveMoney()
                  }
             
              
@@ -1199,24 +1066,12 @@ newGarage.style.background = 'red'
                      achuvemant = achuvemant +1
                      massege = massege + 1
                      massagePer()
+                   
                      buyyyyyy = 'lol'
                      
                  }else{
                    
-                    coin_valut.style.color = 'red'
-             coin_valut.style.scale = '1.2'
-             setTimeout(function(){
-                 coin_valut.style.color = 'gold'
-                 coin_valut.style.scale = '1'
-             },500)
-             setTimeout(function(){
-                 coin_valut.style.color = 'red'
-                 coin_valut.style.scale = '1.2'
-             },1000)
-             setTimeout(function(){
-                 coin_valut.style.color = 'gold'
-                 coin_valut.style.scale = '1'
-             },1500)
+                    IfDontHaveMoney()
                  }
             
              
@@ -1226,14 +1081,14 @@ newGarage.style.background = 'red'
              //////////////////
        
              let  masterPeopleSecond = document.querySelector('.master-clickerr')
-           
+             let  masterPeopleSecondSuv = document.querySelector('.mechanicacc-two')
 
               let daleSecond = 'dale'
               let dozvilSecond = 'no'
 
-let domcratSecondCar = document.querySelector('.domcratt')
+               let domcratSecondCar = document.querySelector('.domcratt')
 
-let buySecondd = 'buy'
+                let buySecondd = 'buy'
 
              newmechanicSecond.addEventListener('click', function(){
            if(buySecondd === 'buy'){
@@ -1243,15 +1098,24 @@ let buySecondd = 'buy'
 
     
 
-                
-               
+                setInterval(dozSecond, 1000)
+                massege = massege + 1
+                achuvemant = achuvemant + 1
                 newmechanicSecond.innerHTML = 'Update mechanic 100000$ lv2'
                 masterPeopleSecond.style.display = 'flex'
                 second_car.style.left = ' 56%'
                   domcratSecondCar.style.display = 'flex'
                   second_car.style.rotate = '-8deg'
                   second_car.style.top = ' 56%'
-
+                  masterPeopleSecondSuv.style.background = 'url(img/sec/Avtomekhanik-s-vyezdom-kruglosutochno.webp)'
+                  masterPeopleSecondSuv.style.backgroundSize= '100% 100%'
+                  massagePer()
+                  ///////////////////
+                  let innermaches = document.querySelector('.get-or-nojsdd')
+                  machsec = machsec + 1
+                  innermaches.innerHTML = machsec
+                  ///////////////////
+                  per()
                 buySecondd = 'lol'
                 
                 daleSecond = 'dale'
@@ -1259,25 +1123,12 @@ let buySecondd = 'buy'
                 
             }else{
               
-               coin_valut.style.color = 'red'
-        coin_valut.style.scale = '1.2'
-        setTimeout(function(){
-            coin_valut.style.color = 'gold'
-            coin_valut.style.scale = '1'
-        },500)
-        setTimeout(function(){
-            coin_valut.style.color = 'red'
-            coin_valut.style.scale = '1.2'
-        },1000)
-        setTimeout(function(){
-            coin_valut.style.color = 'gold'
-            coin_valut.style.scale = '1'
-        },1500)
+                IfDontHaveMoney()
             }
        
            }
      
-                setInterval(dozSecond, 1000)
+           
                 })
                 //  let coinnSecond = 0
                 function dozSecond(){
@@ -1333,20 +1184,7 @@ let buySecondd = 'buy'
                         
                     }else{
                       
-                       coin_valut.style.color = 'red'
-                coin_valut.style.scale = '1.2'
-                setTimeout(function(){
-                    coin_valut.style.color = 'gold'
-                    coin_valut.style.scale = '1'
-                },500)
-                setTimeout(function(){
-                    coin_valut.style.color = 'red'
-                    coin_valut.style.scale = '1.2'
-                },1000)
-                setTimeout(function(){
-                    coin_valut.style.color = 'gold'
-                    coin_valut.style.scale = '1'
-                },1500)
+                        IfDontHaveMoney()
                     }
                
                 
@@ -1369,48 +1207,48 @@ let buySecondd = 'buy'
                 }   
 
           setInterval(doz, 1000)
-
+////////////////////////////////////////////////////first and
  
 
         
-
+/////////////header
         let aboutScrol = document.querySelector('.about-btn')
 
+        
+
         aboutScrol.addEventListener('click', function(){
+
+            MainClose.style.display = 'flex'
+            Developers.style.display = 'none'
+            leaders.style.display = 'none'
             window.scrollBy({
                 top: 735,
                 behavior : "smooth"
               });
         })
         
-        let developersScrol = document.querySelector('.developers-btn')
+      
         
-        developersScrol.addEventListener('click', function(){
-            window.scrollBy({
-                top: 1460,
-                behavior : "smooth"
-              });
+        let leadersBtn = document.querySelector('.game-btn')
+        let leaders = document.querySelector('.leader-board')
+        let main = document.querySelector('.main')
+
+        leadersBtn.addEventListener('click', function(){
+            leaders.style.display = 'flex'
+            main.style.display = 'none'
+            Developers.style.display = 'none'
         })
         
-        
-      
-        let GameStartBtn = document.querySelector('.game-btn')
+        //////////////////////////////////header and
+    
         let MainClose= document.querySelector('.main')
         
-     
-        
-        let goHome= document.querySelector('.button')
-        
-        // goHome.addEventListener('click', function(){
-        
-        //     MainClose.style.display = 'flex'
-        // })
         
         
         let goHomeTwo= document.querySelector('.btn-2')
         
         goHomeTwo.addEventListener('click', function(){
-          
+            header.style.display = 'flex'
             MainClose.style.display = 'flex'
             second_slide.style.display = 'none'
             firs_upg.style.display = 'none'
@@ -1459,9 +1297,11 @@ let buySecondd = 'buy'
         /////////////and galey
 
 
+
+
+        ///////////////////shop
         let shopBtn = document.querySelector('.shopOpen')
         let shopBtnn = document.querySelector('.shopOpenn')
-        let Shop = document.querySelector('.shop')
         let ShopClose = document.querySelector('.Close-shop')
         let ShopClosee = document.querySelector('.Close-shopp')
         let shopBtnCheck = document.querySelector('.shopOpencheck')
@@ -1473,6 +1313,8 @@ let buySecondd = 'buy'
             
                 shopBtnCheck.checked = true
                 open = 'open'
+               
+           
                
                 anime({
                     targets: '.shop',
@@ -1528,12 +1370,20 @@ let buySecondd = 'buy'
                 easing: 'linear'
             })
         })
+////////////////// shop and
 
 
 
+
+/////////////////achivements
 let suvenirConteinerBtn = document.querySelector('.suvenir-conteiner-btn')
 let suvenirConteiner = document.querySelector('.suvenir-conteiner')
 let suvenirConteinerClose = document.querySelector('.suvenir-conteiner-Close')
+
+
+
+let suvenirConteinerCloseSecond = document.querySelector('.suvenir-conteiner-CloseSecond')
+
 
 
 
@@ -1550,40 +1400,47 @@ suvenirConteinerClose.addEventListener('click', function(){
     suvenirConteiner.style.display = 'none'
 })
 
-
-
-
-
-
-
-
-
-
-
-let fortuneBtnClose = document.querySelector('.fortune-conteiner-Close')
-let fortuneBtnOpen= document.querySelector('.fortune')
-let fortune= document.querySelector('.fortune-conteiner')
-
-
-fortuneBtnOpen.addEventListener('click', function(){
-    fortune.style.display = 'flex'
-})
-
-fortuneBtnClose.addEventListener('click', function(){
-    fortune.style.display = 'none'
+suvenirConteinerCloseSecond.addEventListener('click', function(){
+    suvenirConteinerSecond.style.display = 'none'
 })
 
 
 
 
 
+/////////////////achivements and
 
+
+
+// let fortuneBtnClose = document.querySelector('.fortune-conteiner-Close')
+// let fortuneBtnOpen= document.querySelector('.fortune')
+// let fortune= document.querySelector('.fortune-conteiner')
+
+
+// fortuneBtnOpen.addEventListener('click', function(){
+//     fortune.style.display = 'flex'
+// })
+
+// fortuneBtnClose.addEventListener('click', function(){
+//     fortune.style.display = 'none'
+// })
+
+
+
+
+
+//////////////////////stady haw play
 let infConBeck = document.querySelector('.inf-hay-play-game-con')
 let lets= document.querySelector('.lets')
 let nextInf= document.querySelector('.inf-nex-inf')
 let tInfConteiner= document.querySelector('.photo-hav-play')
-
+let skip = document.querySelector('.skip')
 let first = 1
+
+skip.addEventListener('click', function(){
+    infConBeck.style.display = 'none'
+                    first = 6
+})
 
 nextInf.addEventListener('click', function(){
 
@@ -1611,24 +1468,13 @@ if(first === 1){
                     if(first === 5){
                     infConBeck.style.display = 'none'
                     first = 6
-
-    
- }
- }
+      }
+     }
+    }
+   }
   }
- }
-}
-
-
-
-
-
-
-
-
-
 })
-
+//////////////////////stady haw play and
 
 let infbtnOpen = document.querySelector('.tooltip')
 
@@ -1645,10 +1491,32 @@ let quetionsBtnOpen = document.querySelector('.quetionsqs')
 let quetions = document.querySelector('.quetions')
 let quetionsClose = document.querySelector('.quetions-conteiner-Close')
 
+let quetionsBtnOpenSEC = document.querySelector('.quetionsqsss')
+let quetionsSEC = document.querySelector('.quetions-two')
+let quetionsCloseSEC= document.querySelector('.quetions-conteiner-CloseSEC')
+
+
+quetionsBtnOpenSEC.addEventListener('click', function(){
+    if(quetionsTWO === 'TWO'){
+        quetionsSEC.style.bottom = 0
+    }
+    
+})
+
+quetionsCloseSEC.addEventListener('click', function(){
+    quetionsSEC.style.bottom = '-30%'
+    quetionsBtnOpenSEC.checked = false 
+})
+
 quetionsBtnOpen.addEventListener('click', function(){
-    quetions.style.bottom = 0
+    if(quetionsTWO === 'one'){
+        quetions.style.bottom = 0
+    }
+    
 
 })
+
+
 
 quetionsClose.addEventListener('click', function(){
     quetions.style.bottom = '-30%'
@@ -1666,6 +1534,8 @@ let achuvemant = 0
 
 let claimQuetiondoz = 'no'
 let lolo = 1
+let lolisjh = 1
+let claimQuetiondozTWO = 'no'
 
 function per(){
     if(lolo === 1){
@@ -1679,13 +1549,36 @@ function per(){
             
         }
        
-            claimQuetion.innerHTML = achuvemant
-     
+          claimQuetion.innerHTML = achuvemant
+  }
+
+  if(lolisjh === 1){
+    if(achuvemant === 8){
+        quetion8ACHCLAIM.style.background = 'green'
+        quetion8ACHCLAIM.innerHTML = 'Claim'
+        quetion8ACHCLAIM.style.cursor= 'pointer'
+
+        claimQuetiondozTWO = 'yes'
+   
+        lolisjh = 2
+        
     }
    
+    achivementsQuetion8.innerHTML = achuvemant
 }
+}
+let quetion8ACHCLAIM = document.querySelector('.get-or-noSEC')
+quetion8ACHCLAIM.addEventListener('click', function(){
+    if(claimQuetiondozTWO === 'yes'){
+        quetion8ACHCLAIM.style.background = 'grey'
+        quetion8ACHCLAIM.innerHTML = 'Claimed'
 
+        coin = coin + 25000
+        coin_valut.innerHTML =   +coin_valut.innerHTML + 25000
 
+        claimQuetiondozTWO = 'no'
+    } 
+})
 
 claimQuetioncon.addEventListener('click', function(){
     if(claimQuetiondoz === 'yes'){
@@ -1698,3 +1591,182 @@ claimQuetioncon.addEventListener('click', function(){
         claimQuetiondoz = 'no'
     }
 })
+
+
+
+
+function IfDontHaveMoney(){
+    coin_valut.style.color = 'red'
+    coin_valut.style.scale = '1.2'
+    setTimeout(function(){
+        coin_valut.style.color = 'gold'
+        coin_valut.style.scale = '1'
+    },500)
+    setTimeout(function(){
+        coin_valut.style.color = 'red'
+        coin_valut.style.scale = '1.2'
+    },1000)
+    setTimeout(function(){
+        coin_valut.style.color = 'gold'
+        coin_valut.style.scale = '1'
+    },1500)
+}
+
+
+let suvenirConteinerSecond = document.querySelector('.suvenir-conteinerSecond')
+let suvenirConteinerSecondOpen = document.querySelector('.next-Acivements')
+let suvenirConteinerSecondOpeNOOPEN = 'no'
+
+let nextAcivementsSecond = document.querySelector('.next-AcivementsSecond')
+
+nextAcivementsSecond.addEventListener('click', function(){
+    suvenirConteiner.style.display = 'flex'
+    suvenirConteinerSecond.style.display = 'none'
+})
+
+suvenirConteinerSecondOpen.addEventListener('click', function(){
+ if(suvenirConteinerSecondOpeNOOPEN === 'yes'){
+    suvenirConteiner.style.display = 'none'
+    suvenirConteinerSecond.style.display = 'flex'
+ }else{
+    if(suvenirConteinerSecondOpeNOOPEN === 'no'){
+        suvenirConteiner.style.display = 'none'
+        suvenirConteinerSecond.style.display = 'none'
+        
+
+        anime({
+            targets: '.shop',
+            left: 0 ,
+            duration: 500,
+            easing: 'linear'
+        })
+setTimeout(() => {
+    
+    
+    shop.scrollBy({
+        top: 1460,
+        behavior : "smooth"
+      });
+}, 700);
+        
+    
+          setTimeout(function(){
+            newGarage.style.background = 'red'
+            },1000)
+            
+    
+          setTimeout(function(){
+            newGarage.style.background =  'url(https://st2.depositphotos.com/5647624/45006/i/450/depositphotos_450060830-stock-photo-spanners-many-wrenches-industrial-background.jpg)'
+            newGarage.style.backgroundSize = '100% 100%'
+        },1500)
+    }
+ }
+  
+})
+
+
+
+let conWelOpen = document.querySelector('.go-home-btn')
+
+conWelOpen.addEventListener('click', function(){
+   setTimeout(() => {
+    window.scrollTo({
+        top: 0,
+        behavior : "smooth"
+    })
+   }, 500);
+   Developers.style.display = 'none'
+    MainClose.style.display = 'block'
+    leaders.style.display = 'none'
+})
+
+
+let firsDev = document.querySelector('.firs-dev')
+let secDev = document.querySelector('.sec-dev')
+let thirdDev = document.querySelector('.third-dev')
+let fourDev = document.querySelector('.four-dev')
+
+let perDevNext = document.querySelector('.NextDev')
+let perDevBack = document.querySelector('.BackDev')
+
+let Developers = document.querySelector('.dev')
+
+let developersOpen = document.querySelector('.developers-btn')
+
+developersOpen.addEventListener('click', function(){
+    MainClose.style.display = 'none'
+    Developers.style.display = 'flex'
+    leaders.style.display = 'none'
+})
+        
+let Dev =  'SecondDev'
+
+perDevNext.addEventListener('click', function(){
+
+if(Dev === 'SecondDev'){
+    firsDev.style.display = 'none'
+    secDev.style.display = 'flex'
+
+    perDevBack.style.display = 'flex'
+
+    Dev =  'ThirdDev'
+}else{
+
+   if( Dev === 'ThirdDev'){
+    firsDev.style.display = 'none'
+    secDev.style.display = 'none'
+    thirdDev.style.display = 'flex'
+
+    perDevBack.style.display = 'flex'
+
+    Dev =  'FourDev'
+   }else{
+
+
+    if(Dev === 'FourDev'){
+        firsDev.style.display = 'none'
+        secDev.style.display = 'none'
+        thirdDev.style.display = 'none'
+        fourDev.style.display = 'flex'
+
+        perDevNext.style.display = 'none'
+        perDevBack.style.display = 'flex'
+    
+       
+    }
+}
+}
+
+})
+
+perDevBack.addEventListener('click', function(){
+    if(Dev === 'SecondDev'){
+        perDevBack.style.display = 'none'
+
+
+        secDev.style.display = 'none'
+        firsDev.style.display = 'flex'
+    }
+   if(Dev === 'ThirdDev'){
+    secDev.style.display = 'flex'
+    thirdDev.style.display = 'none'
+ 
+    Dev = 'SecondDev'  
+ }else{
+    if(Dev === 'FourDev'){
+        thirdDev.style.display = 'flex'
+        fourDev.style.display = 'none'
+
+
+        perDevBack.style.display = 'flex'
+        perDevNext.style.display = 'flex'
+        Dev =  'ThirdDev'
+    }
+   }
+})
+
+
+let achivementsQuetion8 = document.querySelector('.get-or-noSECONDQU')
+
+
+
