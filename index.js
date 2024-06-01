@@ -42,11 +42,18 @@ coin_valut.innerHTML = coin
 
 })
 
+let achivementsnotifications = document.querySelector('.quetionnotification')
+
+let achivementsnotificationsNum = 0
+
+let quetionnotificationSEC = document.querySelector('.quetionnotificationSEC')
+
+let achivementsnotificationsNumTWO = 0
 
 document.querySelector('.coin').innerHTML =  document.querySelector('.coin').innerHTML
 
 
-let coin = 40000000
+let coin = 50000000
 
 
 
@@ -406,7 +413,7 @@ fir.addEventListener('click', function(){
     second_upg.style.display = 'none'
     quetionsBtnOpenSEC.checked = false
     quetionsSEC.style.bottom = '-30%'
-   
+    achivementsnotifications.style.display = 'inline'
 })
 
 
@@ -779,7 +786,10 @@ if(buySeconddddddddd === 'buy'){
                             achuvemant = achuvemant +1
                             per()
                             ///////////////////////
-
+                            achivementsnotificationsNum =  achivementsnotificationsNum + 1
+                            achivementsnotifications.innerHTML = achivementsnotificationsNum
+                            achivementsnotifications.style.display = 'inline'
+                
                          
                                
                                     claimQuetionThir.style.background = 'green'
@@ -851,6 +861,11 @@ if(buySeconddddddddd === 'buy'){
                 garagepo.style.backgroundSize = '100% 100%'
                 
                 massagePer()
+
+                    achivementsnotificationsNum =  achivementsnotificationsNum + 1
+            achivementsnotifications.innerHTML = achivementsnotificationsNum
+            achivementsnotifications.style.display = 'inline'
+
               
 
 
@@ -906,6 +921,10 @@ if(buySeconddddddddd === 'buy'){
                 shopBtnCheckk.checked = false
                 quetionsBtnOpen.checked = false
                 quetionsTWO = 'TWO'
+
+                
+
+                achivementsnotifications.style.display = 'none'
            
        
 
@@ -1022,6 +1041,9 @@ newGarage.style.background = 'red'
                      ropenda.style.background = 'url(img/endant.png)'
                      ropenda.style.backgroundSize = '100% 100%'
                      massege = massege + 1
+
+
+                    
                      massagePer()
                      per()
                      buyyyyy = 'lol'
@@ -1540,6 +1562,10 @@ let claimQuetiondozTWO = 'no'
 function per(){
     if(lolo === 1){
         if(achuvemant === 3){
+            achivementsnotificationsNum =  achivementsnotificationsNum + 1
+            achivementsnotifications.innerHTML = achivementsnotificationsNum
+            achivementsnotifications.style.display = 'inline'
+
             claimQuetioncon.style.background = 'green'
             claimQuetioncon.innerHTML = 'Claim'
             claimQuetioncon.style.cursor= 'pointer'
