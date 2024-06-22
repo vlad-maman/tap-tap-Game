@@ -1383,6 +1383,7 @@ section {
   padding: 0px 0px;
   transition: all 200ms;
   display: inline-block;
+  cursor: pointer;
   
  
 }
